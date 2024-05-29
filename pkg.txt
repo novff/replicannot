@@ -184,7 +184,6 @@ gnome-shell
 gnome-software
 gnome-system-monitor
 gnome-tweaks
-gnome-user-docs
 gnome-user-share
 gnome-weather
 gnupg

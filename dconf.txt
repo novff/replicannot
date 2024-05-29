@@ -1,5 +1,5 @@
 [org/gnome/Console]
-font-scale=1.5
+font-scale=1.6000000000000001
 last-window-maximised=false
 last-window-size=(1160, 480)
 
@@ -15,7 +15,7 @@ window-maximized=false
 window-width=992
 
 [org/gnome/control-center]
-last-panel='sound'
+last-panel='system'
 window-state=(980, 686, false)
 
 [org/gnome/desktop/app-folders]
@@ -63,7 +63,9 @@ xkb-options=['grp:alt_shift_toggle']
 [org/gnome/desktop/interface]
 clock-show-weekday=true
 color-scheme='prefer-dark'
+cursor-theme='McMojave-cursors'
 enable-hot-corners=false
+gtk-theme='Adwaita'
 
 [org/gnome/desktop/notifications]
 application-children=['org-gnome-console', 'gnome-power-panel', 'google-chrome', 'org-gnome-software', 'org-gnome-tweaks', 'com-usebottles-bottles']
@@ -136,7 +138,7 @@ bottom-panel-size=140
 side-panel-active-page='GeditWindowDocumentsPanel'
 side-panel-size=200
 size=(900, 700)
-state=87168
+state=43908
 
 [org/gnome/gnome-system-monitor]
 current-tab='resources'
@@ -174,7 +176,7 @@ last-folder-path='/home/max/.var/app/com.usebottles.bottles/data/bottles/bottles
 [org/gnome/shell]
 app-picker-layout=[{'bssh.desktop': <{'position': <0>}>, 'org.gnome.Weather.desktop': <{'position': <1>}>, 'org.gnome.clocks.desktop': <{'position': <2>}>, 'org.gnome.Maps.desktop': <{'position': <3>}>, 'bvnc.desktop': <{'position': <4>}>, 'avahi-discover.desktop': <{'position': <5>}>, 'org.gnome.Totem.desktop': <{'position': <6>}>, '4e033a1c-43a8-4df4-bf44-12bb6b390b44': <{'position': <7>}>, 'qv4l2.desktop': <{'position': <8>}>, 'Utilities': <{'position': <9>}>, 'qvidcap.desktop': <{'position': <10>}>, 'yelp.desktop': <{'position': <11>}>, 'org.gnome.TextEditor.desktop': <{'position': <12>}>, 'org.gnome.Epiphany.desktop': <{'position': <13>}>, 'org.gnome.Calendar.desktop': <{'position': <14>}>}]
 disable-extension-version-validation=true
-enabled-extensions=['dash-to-panel@jderose9.github.com', 'ding@rastersoft.com', 'arcmenu@arcmenu.com', 'windowIsReady_Remover@nunofarruca@gmail.com', 'trayIconsReloaded@selfmade.pl', 'quick-settings-tweaks@qwreey', 'remove-alt-tab-delay@vrba.dev']
+enabled-extensions=['dash-to-panel@jderose9.github.com', 'ding@rastersoft.com', 'arcmenu@arcmenu.com', 'windowIsReady_Remover@nunofarruca@gmail.com', 'trayIconsReloaded@selfmade.pl', 'quick-settings-tweaks@qwreey', 'remove-alt-tab-delay@vrba.dev', 'user-theme@gnome-shell-extensions.gcampax.github.com']
 favorite-apps=['google-chrome.desktop', 'org.gnome.Nautilus.desktop', 'com.valvesoftware.Steam.desktop', 'vesktop.desktop', 'org.gnome.Console.desktop']
 welcome-dialog-last-shown-version='46.2'
 
@@ -207,7 +209,7 @@ pinned-apps=[{'id': 'firefox.desktop'}, {'id': 'org.gnome.Terminal.desktop'}]
 pop-folders-data={'Library Home': 'Library Home', 'Utilities': 'gnome core', '4e033a1c-43a8-4df4-bf44-12bb6b390b44': 'settings'}
 power-display-style='Default'
 prefs-visible-page=0
-recently-installed-apps=['Counter-Strike 2.desktop', 'Steam Linux Runtime 3.0 (sniper).desktop', 'org.gnome.gedit.desktop']
+recently-installed-apps=['Counter-Strike 2.desktop', 'Steam Linux Runtime 3.0 (sniper).desktop']
 search-entry-border-radius=(true, 25)
 search-provider-recent-files=true
 show-activities-button=false
@@ -229,7 +231,9 @@ hide-overview-on-startup=true
 hotkeys-overlay-combo='TEMPORARILY'
 intellihide=true
 intellihide-behaviour='ALL_WINDOWS'
-intellihide-hide-from-windows=true
+intellihide-hide-from-windows=false
+intellihide-only-secondary=false
+intellihide-show-in-fullscreen=false
 leftbox-padding=-1
 panel-anchors='{"0":"MIDDLE","1":"MIDDLE"}'
 panel-element-positions='{"0":[{"element":"showAppsButton","visible":false,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":true,"position":"stackedBR"}],"1":[{"element":"showAppsButton","visible":false,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":true,"position":"stackedBR"}]}'
@@ -239,6 +243,7 @@ panel-positions='{"0":"BOTTOM","1":"BOTTOM"}'
 panel-sizes='{"0":52,"1":52}'
 primary-monitor=1
 status-icon-padding=-1
+taskbar-locked=false
 trans-panel-opacity=0.90000000000000002
 trans-use-custom-gradient=false
 trans-use-custom-opacity=true
@@ -253,7 +258,7 @@ show-network-volumes=true
 [org/gnome/shell/extensions/quick-settings-tweaks]
 add-unsafe-quick-toggle-enabled=true
 last-unsafe-state=false
-list-buttons='[{"name":"SystemItem","title":null,"visible":true},{"name":"OutputStreamSlider","title":null,"visible":true},{"name":"InputStreamSlider","title":null,"visible":true},{"name":"St_BoxLayout","title":null,"visible":true},{"name":"BrightnessItem","title":null,"visible":false},{"name":"NMWiredToggle","title":null,"visible":false},{"name":"NMWirelessToggle","title":"Wi-Fi","visible":true},{"name":"NMModemToggle","title":null,"visible":false},{"name":"NMBluetoothToggle","title":null,"visible":false},{"name":"NMVpnToggle","title":null,"visible":false},{"name":"BluetoothToggle","title":"Bluetooth","visible":true},{"name":"PowerProfilesToggle","title":"Power Mode","visible":false},{"name":"NightLightToggle","title":"Night Light","visible":true},{"name":"DarkModeToggle","title":"Dark Style","visible":true},{"name":"KeyboardBrightnessToggle","title":"Keyboard","visible":false},{"name":"RfkillToggle","title":"Airplane Mode","visible":false},{"name":"RotationToggle","title":"Auto Rotate","visible":false},{"name":"DndQuickToggle","title":"Do Not Disturb","visible":true},{"name":"BackgroundAppsToggle","title":"No Background Apps","visible":false},{"name":"MediaSection","title":null,"visible":false},{"name":"Notifications","title":null,"visible":false}]'
+list-buttons='[{"name":"SystemItem","title":null,"visible":true},{"name":"Notifications","title":null,"visible":false},{"name":"OutputStreamSlider","title":null,"visible":false},{"name":"InputStreamSlider","title":null,"visible":false},{"name":"St_BoxLayout","title":null,"visible":true},{"name":"BrightnessItem","title":null,"visible":false},{"name":"NMWiredToggle","title":null,"visible":false},{"name":"NMWirelessToggle","title":"Wi-Fi","visible":true},{"name":"NMModemToggle","title":null,"visible":false},{"name":"NMBluetoothToggle","title":null,"visible":false},{"name":"NMVpnToggle","title":null,"visible":false},{"name":"BluetoothToggle","title":"Bluetooth","visible":true},{"name":"PowerProfilesToggle","title":"Power Mode","visible":false},{"name":"NightLightToggle","title":"Night Light","visible":true},{"name":"DarkModeToggle","title":"Dark Style","visible":true},{"name":"KeyboardBrightnessToggle","title":"Keyboard","visible":false},{"name":"RfkillToggle","title":"Airplane Mode","visible":false},{"name":"RotationToggle","title":"Auto Rotate","visible":false},{"name":"DndQuickToggle","title":"Do Not Disturb","visible":true},{"name":"UnsafeQuickToggle","title":"Unsafe Mode","visible":true},{"name":"BackgroundAppsToggle","title":"No Background Apps","visible":false},{"name":"MediaSection","title":null,"visible":false}]'
 media-control-compact-mode=true
 media-control-enabled=true
 notifications-position='top'
@@ -261,12 +266,18 @@ notifications-use-native-controls=true
 user-removed-buttons=['SystemItem']
 volume-mixer-position='top'
 
+[org/gnome/shell/extensions/user-theme]
+name='WhiteSur-Dark-solid-nord'
+
 [org/gnome/shell/keybindings]
 toggle-overview=['<Super>Tab']
 
 [org/gnome/shell/weather]
 automatic-location=true
 locations=[<(uint32 2, <('Moscow', 'UUWW', true, [(0.97127572873484425, 0.65042604039431762)], [(0.97305983920281813, 0.65651530216830811)])>)>]
+
+[org/gnome/shell/world-clocks]
+locations=@av []
 
 [org/gnome/software]
 check-timestamp=int64 1716923373
