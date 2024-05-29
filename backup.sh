@@ -19,3 +19,5 @@ cp ~/.zshrc $df
 cp -r ~/.themes $df
 
 
+git add .
+

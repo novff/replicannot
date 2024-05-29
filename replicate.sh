@@ -13,6 +13,9 @@ cd ..
 #install packages from yay
 yay -S $(cat aur.txt)
 
+#emplace gnome extensions
+cp -r $df/extensions ~/.local/share/gnome-shell/extensions/
+
 #restore settings from dconf
 dconf load / < dconf.txt
 
