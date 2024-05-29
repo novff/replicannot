@@ -1,0 +1,303 @@
+[org/gnome/Console]
+font-scale=1.5
+last-window-maximised=false
+last-window-size=(1160, 480)
+
+[org/gnome/Extensions]
+window-height=500
+window-maximized=false
+window-width=800
+
+[org/gnome/Weather]
+locations=[<(uint32 2, <('Moscow', 'UUWW', true, [(0.97127572873484425, 0.65042604039431762)], [(0.97305983920281813, 0.65651530216830811)])>)>]
+window-height=496
+window-maximized=false
+window-width=992
+
+[org/gnome/control-center]
+last-panel='sound'
+window-state=(980, 686, false)
+
+[org/gnome/desktop/app-folders]
+folder-children=['Utilities', 'YaST', 'Pardus', '4e033a1c-43a8-4df4-bf44-12bb6b390b44']
+
+[org/gnome/desktop/app-folders/folders/4e033a1c-43a8-4df4-bf44-12bb6b390b44]
+apps=['org.gnome.Extensions.desktop', 'org.gnome.tweaks.desktop', 'org.gnome.Settings.desktop']
+name='settings'
+translate=false
+
+[org/gnome/desktop/app-folders/folders/Pardus]
+categories=['X-Pardus-Apps']
+name='X-Pardus-Apps.directory'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/Utilities]
+apps=['gnome-abrt.desktop', 'gnome-system-log.desktop', 'nm-connection-editor.desktop', 'org.gnome.baobab.desktop', 'org.gnome.Connections.desktop', 'org.gnome.DejaDup.desktop', 'org.gnome.Dictionary.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.Evince.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.fonts.desktop', 'org.gnome.Loupe.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.Usage.desktop', 'vinagre.desktop', 'org.gnome.SystemMonitor.desktop', 'simple-scan.desktop', 'org.gnome.Snapshot.desktop', 'org.gnome.Calculator.desktop', 'org.gnome.Music.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.Nautilus.desktop']
+categories=['X-GNOME-Utilities']
+excluded-apps=['org.gnome.tweaks.desktop']
+name='gnome core'
+translate=false
+
+[org/gnome/desktop/app-folders/folders/YaST]
+categories=['X-SuSE-YaST']
+name='suse-yast.directory'
+translate=true
+
+[org/gnome/desktop/background]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///usr/share/backgrounds/gnome/blobs-l.svg'
+picture-uri-dark='file:///usr/share/backgrounds/gnome/blobs-d.svg'
+primary-color='#241f31'
+secondary-color='#000000'
+
+[org/gnome/desktop/datetime]
+automatic-timezone=true
+
+[org/gnome/desktop/input-sources]
+mru-sources=[('xkb', 'us')]
+show-all-sources=false
+sources=[('xkb', 'us'), ('xkb', 'ru')]
+xkb-options=['grp:alt_shift_toggle']
+
+[org/gnome/desktop/interface]
+clock-show-weekday=true
+color-scheme='prefer-dark'
+enable-hot-corners=false
+
+[org/gnome/desktop/notifications]
+application-children=['org-gnome-console', 'gnome-power-panel', 'google-chrome', 'org-gnome-software', 'org-gnome-tweaks', 'com-usebottles-bottles']
+show-banners=false
+
+[org/gnome/desktop/notifications/application/com-usebottles-bottles]
+application-id='com.usebottles.bottles.desktop'
+
+[org/gnome/desktop/notifications/application/gnome-power-panel]
+application-id='gnome-power-panel.desktop'
+
+[org/gnome/desktop/notifications/application/google-chrome]
+application-id='google-chrome.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-console]
+application-id='org.gnome.Console.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-software]
+application-id='org.gnome.Software.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-tweaks]
+application-id='org.gnome.tweaks.desktop'
+
+[org/gnome/desktop/peripherals/keyboard]
+numlock-state=true
+
+[org/gnome/desktop/peripherals/mouse]
+accel-profile='flat'
+speed=0.0
+
+[org/gnome/desktop/peripherals/touchpad]
+two-finger-scrolling-enabled=true
+
+[org/gnome/desktop/privacy]
+old-files-age=uint32 30
+recent-files-max-age=-1
+
+[org/gnome/desktop/screensaver]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///usr/share/backgrounds/gnome/blobs-l.svg'
+primary-color='#241f31'
+secondary-color='#000000'
+
+[org/gnome/desktop/search-providers]
+sort-order=['org.gnome.Contacts.desktop', 'org.gnome.Documents.desktop', 'org.gnome.Nautilus.desktop']
+
+[org/gnome/desktop/session]
+idle-delay=uint32 300
+
+[org/gnome/desktop/sound]
+allow-volume-above-100-percent=true
+event-sounds=false
+theme-name='__custom'
+
+[org/gnome/desktop/wm/keybindings]
+switch-applications=['<Alt>Tab']
+switch-applications-backward=['<Shift><Alt>Tab']
+
+[org/gnome/desktop/wm/preferences]
+button-layout='appmenu:minimize,maximize,close'
+focus-new-windows='smart'
+resize-with-right-button=false
+
+[org/gnome/evolution-data-server]
+migrated=true
+
+[org/gnome/gedit/state/window]
+bottom-panel-size=140
+side-panel-active-page='GeditWindowDocumentsPanel'
+side-panel-size=200
+size=(900, 700)
+state=87168
+
+[org/gnome/gnome-system-monitor]
+current-tab='resources'
+show-dependencies=false
+show-whose-processes='user'
+window-height=636
+
+[org/gnome/gnome-system-monitor/disktreenew]
+col-1-visible=true
+col-1-width=227
+col-2-visible=true
+col-2-width=125
+col-6-visible=true
+col-6-width=0
+
+[org/gnome/mutter]
+center-new-windows=true
+overlay-key='Super_L'
+
+[org/gnome/nautilus/list-view]
+default-zoom-level='small'
+
+[org/gnome/nautilus/preferences]
+default-folder-viewer='list-view'
+migrated-gtk-settings=true
+search-filter-time-type='last_modified'
+
+[org/gnome/nautilus/window-state]
+initial-size=(890, 550)
+maximized=false
+
+[org/gnome/portal/filechooser/com.usebottles.bottles]
+last-folder-path='/home/max/.var/app/com.usebottles.bottles/data/bottles/bottles/photoshop-2024/drive_c/Program Files/Adobe/Adobe Photoshop 2024'
+
+[org/gnome/shell]
+app-picker-layout=[{'bssh.desktop': <{'position': <0>}>, 'org.gnome.Weather.desktop': <{'position': <1>}>, 'org.gnome.clocks.desktop': <{'position': <2>}>, 'org.gnome.Maps.desktop': <{'position': <3>}>, 'bvnc.desktop': <{'position': <4>}>, 'avahi-discover.desktop': <{'position': <5>}>, 'org.gnome.Totem.desktop': <{'position': <6>}>, '4e033a1c-43a8-4df4-bf44-12bb6b390b44': <{'position': <7>}>, 'qv4l2.desktop': <{'position': <8>}>, 'Utilities': <{'position': <9>}>, 'qvidcap.desktop': <{'position': <10>}>, 'yelp.desktop': <{'position': <11>}>, 'org.gnome.TextEditor.desktop': <{'position': <12>}>, 'org.gnome.Epiphany.desktop': <{'position': <13>}>, 'org.gnome.Calendar.desktop': <{'position': <14>}>}]
+disable-extension-version-validation=true
+enabled-extensions=['dash-to-panel@jderose9.github.com', 'ding@rastersoft.com', 'arcmenu@arcmenu.com', 'windowIsReady_Remover@nunofarruca@gmail.com', 'trayIconsReloaded@selfmade.pl', 'quick-settings-tweaks@qwreey', 'remove-alt-tab-delay@vrba.dev']
+favorite-apps=['google-chrome.desktop', 'org.gnome.Nautilus.desktop', 'com.valvesoftware.Steam.desktop', 'vesktop.desktop', 'org.gnome.Console.desktop']
+welcome-dialog-last-shown-version='46.2'
+
+[org/gnome/shell/app-switcher]
+current-workspace-only=true
+
+[org/gnome/shell/extensions/arcmenu]
+button-padding=-1
+custom-menu-button-icon-size=30.0
+left-panel-width=340
+max-search-results=10
+menu-background-color='rgba(28,28,28,0.98)'
+menu-border-color='rgb(63,62,64)'
+menu-border-width=0
+menu-button-appearance='Icon'
+menu-button-fg-color=(false, 'rgb(242,242,242)')
+menu-button-position-offset=0
+menu-font-size=12
+menu-foreground-color='rgb(211,218,227)'
+menu-height=800
+menu-item-active-bg-color='rgba(228,228,226,0.15)'
+menu-item-active-fg-color='rgb(255,255,255)'
+menu-item-hover-bg-color='rgba(238,238,236,0.08)'
+menu-item-hover-fg-color='rgb(255,255,255)'
+menu-layout='Windows'
+menu-separator-color='rgb(63,62,64)'
+multi-monitor=true
+override-menu-theme=true
+pinned-apps=[{'id': 'firefox.desktop'}, {'id': 'org.gnome.Terminal.desktop'}]
+pop-folders-data={'Library Home': 'Library Home', 'Utilities': 'gnome core', '4e033a1c-43a8-4df4-bf44-12bb6b390b44': 'settings'}
+power-display-style='Default'
+prefs-visible-page=0
+recently-installed-apps=['Counter-Strike 2.desktop', 'Steam Linux Runtime 3.0 (sniper).desktop', 'org.gnome.gedit.desktop']
+search-entry-border-radius=(true, 25)
+search-provider-recent-files=true
+show-activities-button=false
+vert-separator=true
+windows-disable-pinned-apps=true
+
+[org/gnome/shell/extensions/dash-to-panel]
+animate-appicon-hover=false
+animate-appicon-hover-animation-extent={'RIPPLE': 4, 'PLANK': 4, 'SIMPLE': 1}
+appicon-margin=6
+appicon-padding=6
+appicon-style='NORMAL'
+available-monitors=[1, 0]
+dot-position='BOTTOM'
+dot-style-focused='DOTS'
+dot-style-unfocused='DOTS'
+group-apps=true
+hide-overview-on-startup=true
+hotkeys-overlay-combo='TEMPORARILY'
+intellihide=true
+intellihide-behaviour='ALL_WINDOWS'
+intellihide-hide-from-windows=true
+leftbox-padding=-1
+panel-anchors='{"0":"MIDDLE","1":"MIDDLE"}'
+panel-element-positions='{"0":[{"element":"showAppsButton","visible":false,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":true,"position":"stackedBR"}],"1":[{"element":"showAppsButton","visible":false,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":true,"position":"stackedBR"}]}'
+panel-element-positions-monitors-sync=true
+panel-lengths='{"0":70,"1":70}'
+panel-positions='{"0":"BOTTOM","1":"BOTTOM"}'
+panel-sizes='{"0":52,"1":52}'
+primary-monitor=1
+status-icon-padding=-1
+trans-panel-opacity=0.90000000000000002
+trans-use-custom-gradient=false
+trans-use-custom-opacity=true
+tray-padding=-1
+window-preview-title-position='TOP'
+
+[org/gnome/shell/extensions/ding]
+check-x11wayland=true
+icon-size='small'
+show-network-volumes=true
+
+[org/gnome/shell/extensions/quick-settings-tweaks]
+add-unsafe-quick-toggle-enabled=true
+last-unsafe-state=false
+list-buttons='[{"name":"SystemItem","title":null,"visible":true},{"name":"OutputStreamSlider","title":null,"visible":true},{"name":"InputStreamSlider","title":null,"visible":true},{"name":"St_BoxLayout","title":null,"visible":true},{"name":"BrightnessItem","title":null,"visible":false},{"name":"NMWiredToggle","title":null,"visible":false},{"name":"NMWirelessToggle","title":"Wi-Fi","visible":true},{"name":"NMModemToggle","title":null,"visible":false},{"name":"NMBluetoothToggle","title":null,"visible":false},{"name":"NMVpnToggle","title":null,"visible":false},{"name":"BluetoothToggle","title":"Bluetooth","visible":true},{"name":"PowerProfilesToggle","title":"Power Mode","visible":false},{"name":"NightLightToggle","title":"Night Light","visible":true},{"name":"DarkModeToggle","title":"Dark Style","visible":true},{"name":"KeyboardBrightnessToggle","title":"Keyboard","visible":false},{"name":"RfkillToggle","title":"Airplane Mode","visible":false},{"name":"RotationToggle","title":"Auto Rotate","visible":false},{"name":"DndQuickToggle","title":"Do Not Disturb","visible":true},{"name":"BackgroundAppsToggle","title":"No Background Apps","visible":false},{"name":"MediaSection","title":null,"visible":false},{"name":"Notifications","title":null,"visible":false}]'
+media-control-compact-mode=true
+media-control-enabled=true
+notifications-position='top'
+notifications-use-native-controls=true
+user-removed-buttons=['SystemItem']
+volume-mixer-position='top'
+
+[org/gnome/shell/keybindings]
+toggle-overview=['<Super>Tab']
+
+[org/gnome/shell/weather]
+automatic-location=true
+locations=[<(uint32 2, <('Moscow', 'UUWW', true, [(0.97127572873484425, 0.65042604039431762)], [(0.97305983920281813, 0.65651530216830811)])>)>]
+
+[org/gnome/software]
+check-timestamp=int64 1716923373
+first-run=false
+flatpak-purge-timestamp=int64 1716947925
+
+[org/gnome/tweaks]
+show-extensions-notice=false
+
+[org/gtk/gtk4/settings/file-chooser]
+date-format='regular'
+location-mode='path-bar'
+show-hidden=true
+sidebar-width=140
+sort-column='name'
+sort-directories-first=false
+sort-order='ascending'
+type-format='category'
+view-type='list'
+window-size=(819, 916)
+
+[org/gtk/settings/file-chooser]
+date-format='regular'
+location-mode='path-bar'
+show-hidden=false
+show-size-column=true
+show-type-column=true
+sidebar-width=157
+sort-column='name'
+sort-directories-first=false
+sort-order='ascending'
+type-format='category'
+window-position=(678, 245)
+window-size=(1203, 902)

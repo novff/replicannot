@@ -1,0 +1,17 @@
+anbox-modules-dkms-git
+game-devices-udev
+google-chrome
+libgbinder
+libgbinder-debug
+libglibutil
+libglibutil-debug
+nvidia-beta-dkms
+nvidia-utils-beta
+onlyoffice-bin
+python-gbinder
+python-gbinder-debug
+vesktop-bin
+waydroid
+waydroid-image-gapps
+waydroid-settings-git
+yay-bin
