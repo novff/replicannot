@@ -3,7 +3,7 @@ df=$cwd/configs/dotfiles
 
 #install packages from arch repo which are explicitly found in repo
 sudo sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
-sudo pacman -S --noconfirm --needed< packages.txt
+sudo pacman -S --noconfirm --needed - < packages.txt
 
 #install yay-bin
 git clone https://aur.archlinux.org/yay-bin.git && cd yay-bin
