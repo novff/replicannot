@@ -14,9 +14,10 @@ cp -r ~/.local/share/gnome-shell/extensions/ ./extensions
 #extract settings for desktop via dconf
 dconf dump / > dconf.txt
 
-#backup dotfiles
+#backup dotfiles and configurations
 cp ~/.zshrc $df
 cp -r ~/.themes $df
+cp -r ~/Templates $cwd/configs/Templates
 
 
 git add .

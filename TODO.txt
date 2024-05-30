@@ -1,0 +1,5 @@
+learn yay usage in scripts cuz it fails 
+figure out dconf settings in chroot sessions 
+figure out flatpak and snap packages
+figure out if the script works with arch strata in brl
+
