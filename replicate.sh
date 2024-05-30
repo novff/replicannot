@@ -26,4 +26,5 @@ dconf load / < dconf.txt
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 cp $df/.zshrc ~/
 cp -r $df/.themes ~/
+cp -r $df/.icons ~/
 cp -r $cwd/Templates ~/Templates

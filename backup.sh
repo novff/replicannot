@@ -17,6 +17,7 @@ dconf dump / > dconf.txt
 #backup dotfiles and configurations
 cp ~/.zshrc $df
 cp -r ~/.themes $df
+cp -r ~/.icons $df
 cp -r ~/Templates $cwd/configs/Templates
 
 
