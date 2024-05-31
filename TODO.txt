@@ -1,5 +1,7 @@
-learn yay usage in scripts cuz it fails 
+learn yay usage in scripts cuz it fails a lot
 figure out dconf settings in chroot sessions 
 figure out snap packages sync
 figure out if the script works with arch strata in brl
+figure out nix packages
+figure out wine backups(do i copy prefixes or smth or do i extract list and automate installation)
 
