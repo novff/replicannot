@@ -22,7 +22,7 @@ df=$cwd/configs/dotfiles
 	sudo pacman -S --noconfirm --needed flatpak python python-pip
 	pip install --user flatpak-sync --break-system-packages
 #install flatpak packages
-	flatpak-sync run -v
+	~/.local/bin/flatpak-sync run -v
 #emplace gnome extensions
 	cp -r $df/extensions ~/.local/share/gnome-shell/extensions/
 #restore settings from dconf

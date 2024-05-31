@@ -1,0 +1,25 @@
+{
+    "sync": {
+        "flatpak": {
+            "settings": {
+                "remove_unmanaged_repos": false,
+                "remove_unmanaged_apps": false
+            },
+            "repos": [
+                {
+                    "name": "flathub",
+                    "repo": "https://flathub.org/repo/flathub.flatpakrepo",
+                    "type": ""
+                }
+            ],
+            "apps": [
+                {
+                    "name": "com.usebottles.bottles",
+                    "repo": "flathub",
+                    "version": "latest",
+                    "pin": false
+                }
+            ]
+        }
+    }
+}

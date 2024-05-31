@@ -7,7 +7,9 @@ df=$cwd/configs/dotfiles
 	pacman -Qm |cut -f 1 -d " " > ./aur.txt
 #extract flatpaks
 	#flatpak list --columns=application > ./flat.txt
-	flatpak-sync generate -v
+	sudo pacman -S --noconfirm --needed flatpak python python-pip
+	pip install --user flatpak-sync --break-system-packages
+	~/.local/bin/flatpak-sync generate -v
 	cp -r ~/.config/flatpak-sync/flatpak.json ./flatpack.json 
 #extract snaps
 	#how doe
