@@ -24,7 +24,7 @@ df=$cwd/configs/dotfiles
 	cp ~/.zshrc $df
 	cp -r ~/.themes $df
 	cp -r ~/.icons $df
-	cp -r ~/Templates $cwd/configs/Templates
+	cp -r ~/Templates $cwd/configs/
 
 #github automation
 	git add .
