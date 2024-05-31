@@ -12,7 +12,6 @@ alsa-lib
 alsa-plugins
 alsa-topology-conf
 alsa-ucm-conf
-amd-ucode
 aom
 apache
 appstream
@@ -97,7 +96,6 @@ eglexternalplatform
 electron28
 electron29
 enchant
-epiphany
 evince
 evolution-data-server
 exempi
@@ -183,13 +181,9 @@ gnome-remote-desktop
 gnome-session
 gnome-settings-daemon
 gnome-shell
-gnome-shell-extensions
 gnome-software
 gnome-system-monitor
-gnome-text-editor
-gnome-tour
 gnome-tweaks
-gnome-user-docs
 gnome-user-share
 gnome-weather
 gnupg
@@ -651,8 +645,6 @@ npth
 nspr
 nss
 numactl
-nvidia-dkms
-nvidia-utils
 ocl-icd
 openal
 opencore-amr
@@ -731,7 +723,6 @@ python-more-itertools
 python-ordered-set
 python-packaging
 python-pillow
-python-pip
 python-platformdirs
 python-psutil
 python-pyasn1
@@ -749,7 +740,6 @@ python-twisted
 python-typeguard
 python-typing_extensions
 python-validate-pyproject
-python-wheel
 python-zope-interface
 qbittorrent
 qemu-audio-alsa
