@@ -1,5 +1,5 @@
 [org/gnome/Console]
-font-scale=1.6000000000000001
+font-scale=1.2999999999999998
 last-window-maximised=false
 last-window-size=(1160, 480)
 
@@ -15,8 +15,8 @@ window-maximized=false
 window-width=992
 
 [org/gnome/control-center]
-last-panel='system'
-window-state=(980, 686, false)
+last-panel='background'
+window-state=(980, 806, false)
 
 [org/gnome/desktop/app-folders]
 folder-children=['Utilities', 'YaST', 'Pardus', '4e033a1c-43a8-4df4-bf44-12bb6b390b44']
@@ -63,12 +63,12 @@ xkb-options=['grp:alt_shift_toggle']
 [org/gnome/desktop/interface]
 clock-show-weekday=true
 color-scheme='prefer-dark'
-cursor-theme='McMojave-cursors'
+cursor-theme='macOS'
 enable-hot-corners=false
 gtk-theme='Adwaita'
 
 [org/gnome/desktop/notifications]
-application-children=['org-gnome-console', 'gnome-power-panel', 'google-chrome', 'org-gnome-software', 'org-gnome-tweaks', 'com-usebottles-bottles']
+application-children=['org-gnome-console', 'gnome-power-panel', 'google-chrome', 'org-gnome-software', 'org-gnome-tweaks', 'com-usebottles-bottles', 'org-gnome-epiphany', 'vesktop']
 show-banners=false
 
 [org/gnome/desktop/notifications/application/com-usebottles-bottles]
@@ -83,11 +83,17 @@ application-id='google-chrome.desktop'
 [org/gnome/desktop/notifications/application/org-gnome-console]
 application-id='org.gnome.Console.desktop'
 
+[org/gnome/desktop/notifications/application/org-gnome-epiphany]
+application-id='org.gnome.Epiphany.desktop'
+
 [org/gnome/desktop/notifications/application/org-gnome-software]
 application-id='org.gnome.Software.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-tweaks]
 application-id='org.gnome.tweaks.desktop'
+
+[org/gnome/desktop/notifications/application/vesktop]
+application-id='vesktop.desktop'
 
 [org/gnome/desktop/peripherals/keyboard]
 numlock-state=true
@@ -130,6 +136,17 @@ button-layout='appmenu:minimize,maximize,close'
 focus-new-windows='smart'
 resize-with-right-button=false
 
+[org/gnome/epiphany]
+default-search-engine='Google'
+restore-session-policy='crashed'
+search-engine-providers=[{'url': <'https://www.bing.com/search?q=%s'>, 'bang': <'!b'>, 'name': <'Bing'>}, {'url': <'https://duckduckgo.com/?q=%s&t=epiphany'>, 'bang': <'!ddg'>, 'name': <'DuckDuckGo'>}, {'url': <'https://www.google.com/search?q=%s'>, 'bang': <'!g'>, 'name': <'Google'>}]
+
+[org/gnome/epiphany/web]
+ask-on-download=false
+default-zoom-level=1.0
+show-developer-actions=true
+switch-to-new-tab=false
+
 [org/gnome/evolution-data-server]
 migrated=true
 
@@ -162,7 +179,7 @@ overlay-key='Super_L'
 default-zoom-level='small'
 
 [org/gnome/nautilus/preferences]
-default-folder-viewer='list-view'
+default-folder-viewer='icon-view'
 migrated-gtk-settings=true
 search-filter-time-type='last_modified'
 
@@ -174,7 +191,7 @@ maximized=false
 last-folder-path='/home/max/.var/app/com.usebottles.bottles/data/bottles/bottles/photoshop-2024/drive_c/Program Files/Adobe/Adobe Photoshop 2024'
 
 [org/gnome/shell]
-app-picker-layout=[{'bssh.desktop': <{'position': <0>}>, 'org.gnome.Weather.desktop': <{'position': <1>}>, 'org.gnome.clocks.desktop': <{'position': <2>}>, 'org.gnome.Maps.desktop': <{'position': <3>}>, 'bvnc.desktop': <{'position': <4>}>, 'avahi-discover.desktop': <{'position': <5>}>, 'org.gnome.Totem.desktop': <{'position': <6>}>, '4e033a1c-43a8-4df4-bf44-12bb6b390b44': <{'position': <7>}>, 'qv4l2.desktop': <{'position': <8>}>, 'Utilities': <{'position': <9>}>, 'qvidcap.desktop': <{'position': <10>}>, 'yelp.desktop': <{'position': <11>}>, 'org.gnome.TextEditor.desktop': <{'position': <12>}>, 'org.gnome.Epiphany.desktop': <{'position': <13>}>, 'org.gnome.Calendar.desktop': <{'position': <14>}>}]
+app-picker-layout=[{'bssh.desktop': <{'position': <0>}>, 'org.gnome.Weather.desktop': <{'position': <1>}>, 'org.gnome.clocks.desktop': <{'position': <2>}>, 'org.gnome.Maps.desktop': <{'position': <3>}>, 'bvnc.desktop': <{'position': <4>}>, 'avahi-discover.desktop': <{'position': <5>}>, 'org.gnome.Totem.desktop': <{'position': <6>}>, '4e033a1c-43a8-4df4-bf44-12bb6b390b44': <{'position': <7>}>, 'qv4l2.desktop': <{'position': <8>}>, 'Utilities': <{'position': <9>}>, 'qvidcap.desktop': <{'position': <10>}>, 'yelp.desktop': <{'position': <11>}>, 'org.gnome.TextEditor.desktop': <{'position': <12>}>, 'org.gnome.Epiphany.desktop': <{'position': <13>}>, 'org.gnome.Calendar.desktop': <{'position': <14>}>, 'org.gnome.Tour.desktop': <{'position': <15>}>, 'org.gnome.Software.desktop': <{'position': <16>}>}]
 disable-extension-version-validation=true
 enabled-extensions=['dash-to-panel@jderose9.github.com', 'ding@rastersoft.com', 'arcmenu@arcmenu.com', 'windowIsReady_Remover@nunofarruca@gmail.com', 'trayIconsReloaded@selfmade.pl', 'quick-settings-tweaks@qwreey', 'remove-alt-tab-delay@vrba.dev', 'user-theme@gnome-shell-extensions.gcampax.github.com']
 favorite-apps=['google-chrome.desktop', 'org.gnome.Nautilus.desktop', 'com.valvesoftware.Steam.desktop', 'vesktop.desktop', 'org.gnome.Console.desktop']
@@ -209,7 +226,7 @@ pinned-apps=[{'id': 'firefox.desktop'}, {'id': 'org.gnome.Terminal.desktop'}]
 pop-folders-data={'Library Home': 'Library Home', 'Utilities': 'gnome core', '4e033a1c-43a8-4df4-bf44-12bb6b390b44': 'settings'}
 power-display-style='Default'
 prefs-visible-page=0
-recently-installed-apps=['Counter-Strike 2.desktop', 'Steam Linux Runtime 3.0 (sniper).desktop']
+recently-installed-apps=['Counter-Strike 2.desktop', 'Steam Linux Runtime 3.0 (sniper).desktop', 'com.usebottles.bottles.desktop', 'waydroid-settings.desktop']
 search-entry-border-radius=(true, 25)
 search-provider-recent-files=true
 show-activities-button=false
@@ -258,7 +275,7 @@ show-network-volumes=true
 [org/gnome/shell/extensions/quick-settings-tweaks]
 add-unsafe-quick-toggle-enabled=true
 last-unsafe-state=false
-list-buttons='[{"name":"SystemItem","title":null,"visible":true},{"name":"Notifications","title":null,"visible":false},{"name":"OutputStreamSlider","title":null,"visible":false},{"name":"InputStreamSlider","title":null,"visible":false},{"name":"St_BoxLayout","title":null,"visible":true},{"name":"BrightnessItem","title":null,"visible":false},{"name":"NMWiredToggle","title":null,"visible":false},{"name":"NMWirelessToggle","title":"Wi-Fi","visible":true},{"name":"NMModemToggle","title":null,"visible":false},{"name":"NMBluetoothToggle","title":null,"visible":false},{"name":"NMVpnToggle","title":null,"visible":false},{"name":"BluetoothToggle","title":"Bluetooth","visible":true},{"name":"PowerProfilesToggle","title":"Power Mode","visible":false},{"name":"NightLightToggle","title":"Night Light","visible":true},{"name":"DarkModeToggle","title":"Dark Style","visible":true},{"name":"KeyboardBrightnessToggle","title":"Keyboard","visible":false},{"name":"RfkillToggle","title":"Airplane Mode","visible":false},{"name":"RotationToggle","title":"Auto Rotate","visible":false},{"name":"DndQuickToggle","title":"Do Not Disturb","visible":true},{"name":"UnsafeQuickToggle","title":"Unsafe Mode","visible":true},{"name":"BackgroundAppsToggle","title":"No Background Apps","visible":false},{"name":"MediaSection","title":null,"visible":false}]'
+list-buttons='[{"name":"SystemItem","title":null,"visible":true},{"name":"Notifications","title":null,"visible":true},{"name":"OutputStreamSlider","title":null,"visible":false},{"name":"InputStreamSlider","title":null,"visible":false},{"name":"St_BoxLayout","title":null,"visible":true},{"name":"BrightnessItem","title":null,"visible":false},{"name":"NMWiredToggle","title":"Wired","visible":true},{"name":"NMWirelessToggle","title":null,"visible":false},{"name":"NMModemToggle","title":null,"visible":false},{"name":"NMBluetoothToggle","title":null,"visible":false},{"name":"NMVpnToggle","title":null,"visible":false},{"name":"BluetoothToggle","title":"Bluetooth","visible":false},{"name":"PowerProfilesToggle","title":"Power Mode","visible":false},{"name":"NightLightToggle","title":"Night Light","visible":true},{"name":"DarkModeToggle","title":"Dark Style","visible":true},{"name":"KeyboardBrightnessToggle","title":"Keyboard","visible":false},{"name":"RfkillToggle","title":"Airplane Mode","visible":false},{"name":"RotationToggle","title":"Auto Rotate","visible":false},{"name":"DndQuickToggle","title":"Do Not Disturb","visible":true},{"name":"UnsafeQuickToggle","title":"Unsafe Mode","visible":true},{"name":"BackgroundAppsToggle","title":"No Background Apps","visible":false},{"name":"MediaSection","title":null,"visible":false}]'
 media-control-compact-mode=true
 media-control-enabled=true
 notifications-position='top'
@@ -280,7 +297,7 @@ locations=[<(uint32 2, <('Moscow', 'UUWW', true, [(0.97127572873484425, 0.650426
 locations=@av []
 
 [org/gnome/software]
-check-timestamp=int64 1716923373
+check-timestamp=int64 1717107883
 first-run=false
 flatpak-purge-timestamp=int64 1716947925
 
