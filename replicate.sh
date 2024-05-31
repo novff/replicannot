@@ -6,7 +6,7 @@ df=$cwd/configs/dotfiles
 	cp $df/.zshrc ~/
 	cp -r $df/.themes ~/
 	cp -r $df/.icons ~/
-	cp -r $cwd/Templates ~/Templates
+	cp -r $cwd/Templates ~/
 	cp -r $cwd/flatpack.json ~/.config/flatpak-sync/flatpak.json
 #install packages from arch repo which are explicitly found in repo
 	sudo sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
