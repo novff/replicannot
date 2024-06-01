@@ -18,6 +18,18 @@
                     "repo": "flathub",
                     "version": "latest",
                     "pin": false
+                },
+                {
+                    "name": "io.github.Foldex.AdwSteamGtk",
+                    "repo": "flathub",
+                    "version": "latest",
+                    "pin": false
+                },
+                {
+                    "name": "page.kramo.Cartridges",
+                    "repo": "flathub",
+                    "version": "latest",
+                    "pin": false
                 }
             ]
         }
