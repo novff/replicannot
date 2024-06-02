@@ -24,12 +24,6 @@
                     "repo": "flathub",
                     "version": "latest",
                     "pin": false
-                },
-                {
-                    "name": "page.kramo.Cartridges",
-                    "repo": "flathub",
-                    "version": "latest",
-                    "pin": false
                 }
             ]
         }

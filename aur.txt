@@ -18,10 +18,14 @@ pamac-all
 pamac-all-debug
 pamac-cli
 pamac-cli-debug
+pcem-git
+pcem-git-debug
 prismlauncher-bin
 prismlauncher-bin-debug
+protontricks
 python-gbinder
 python-gbinder-debug
+python-vdf
 rpcs3-bin
 snapd
 snapd-glib
