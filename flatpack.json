@@ -24,6 +24,12 @@
                     "repo": "flathub",
                     "version": "latest",
                     "pin": false
+                },
+                {
+                    "name": "org.prismlauncher.PrismLauncher",
+                    "repo": "flathub",
+                    "version": "latest",
+                    "pin": false
                 }
             ]
         }

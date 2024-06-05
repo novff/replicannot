@@ -103,3 +103,6 @@ alias pm="sudo pacman"
 alias ..="cd .."
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
+
+eval "$(zoxide init zsh --cmd cd)"
+
