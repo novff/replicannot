@@ -1,0 +1,4 @@
+install nvidia-dkms >=555
+install nvidia-utils ad lib32-nvidia-utils
+
+

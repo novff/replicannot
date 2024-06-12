@@ -1,5 +1,6 @@
 bauh
 cemu-bin
+darling-bin
 game-devices-udev
 google-chrome
 lib32-nvidia-utils-beta

@@ -1,16 +1,26 @@
+[com/github/Rirusha/Cassette]
+application-state='online'
+default-pages-set=true
+show-liked=true
+show-main=true
+show-playlists=true
+volume=0.054054054054054057
+window-maximized=false
+window-width=753
+
 [io/missioncenter/MissionCenter]
 apps-page-sorting-column='Cpu'
 apps-page-sorting-order='Descending'
 performance-page-cpu-graph=2
 performance-selected-page='cpu'
-window-height=627
+window-height=1080
 window-selected-page='apps-page'
-window-width=1001
+window-width=1920
 
 [org/gnome/Console]
 font-scale=1.5
-last-window-maximised=true
-last-window-size=(1370, 735)
+last-window-maximised=false
+last-window-size=(1123, 735)
 
 [org/gnome/Extensions]
 window-height=500
@@ -25,7 +35,7 @@ window-width=992
 
 [org/gnome/baobab/ui]
 is-maximized=false
-window-size=(906, 478)
+window-size=(1399, 478)
 
 [org/gnome/builder]
 window-maximized=true
@@ -190,8 +200,11 @@ panel-id='world'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='applications'
+last-panel='system'
 window-state=(980, 806, false)
+
+[org/gnome/desktop/a11y/applications]
+screen-reader-enabled=false
 
 [org/gnome/desktop/app-folders]
 folder-children=['Utilities', 'YaST', 'Pardus', '4e033a1c-43a8-4df4-bf44-12bb6b390b44']
@@ -227,7 +240,7 @@ primary-color='#241f31'
 secondary-color='#000000'
 
 [org/gnome/desktop/datetime]
-automatic-timezone=true
+automatic-timezone=false
 
 [org/gnome/desktop/input-sources]
 mru-sources=[('xkb', 'us')]
@@ -244,9 +257,10 @@ enable-animations=true
 enable-hot-corners=false
 gtk-theme='Adwaita'
 icon-theme='Adwaita'
+overlay-scrolling=false
 
 [org/gnome/desktop/notifications]
-application-children=['org-gnome-console', 'gnome-power-panel', 'google-chrome', 'org-gnome-software', 'org-gnome-tweaks', 'com-usebottles-bottles', 'org-gnome-epiphany', 'vesktop', 'dde-store', 'org-manjaro-pamac-manager', 'org-gnome-baobab']
+application-children=['org-gnome-console', 'gnome-power-panel', 'google-chrome', 'org-gnome-software', 'org-gnome-tweaks', 'com-usebottles-bottles', 'org-gnome-epiphany', 'vesktop', 'dde-store', 'org-manjaro-pamac-manager', 'org-gnome-baobab', 'org-gnome-nautilus', 'org-gnome-extensions']
 show-banners=false
 
 [org/gnome/desktop/notifications/application/com-usebottles-bottles]
@@ -269,6 +283,12 @@ application-id='org.gnome.Console.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-epiphany]
 application-id='org.gnome.Epiphany.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-extensions]
+application-id='org.gnome.Extensions.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-nautilus]
+application-id='org.gnome.Nautilus.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-software]
 application-id='org.gnome.Software.desktop'
@@ -307,7 +327,7 @@ secondary-color='#000000'
 sort-order=['org.gnome.Contacts.desktop', 'org.gnome.Documents.desktop', 'org.gnome.Nautilus.desktop']
 
 [org/gnome/desktop/session]
-idle-delay=uint32 600
+idle-delay=uint32 0
 
 [org/gnome/desktop/sound]
 allow-volume-above-100-percent=true
@@ -339,6 +359,19 @@ default-zoom-level=1.0
 show-developer-actions=true
 switch-to-new-tab=false
 
+[org/gnome/evince/default]
+continuous=true
+dual-page=false
+dual-page-odd-left=false
+enable-spellchecking=true
+fullscreen=false
+inverted-colors=false
+show-sidebar=true
+sidebar-page='links'
+sidebar-size=148
+sizing-mode='automatic'
+window-ratio=(1.1029411764705883, 0.75757575757575757)
+
 [org/gnome/evolution-data-server]
 migrated=true
 
@@ -346,8 +379,8 @@ migrated=true
 bottom-panel-size=140
 side-panel-active-page='GeditWindowDocumentsPanel'
 side-panel-size=200
-size=(900, 700)
-state=43908
+size=(969, 782)
+state=87168
 
 [org/gnome/gnome-system-monitor]
 current-tab='processes'
@@ -387,7 +420,7 @@ show-delete-permanently=false
 show-image-thumbnails='always'
 
 [org/gnome/nautilus/window-state]
-initial-size=(1060, 731)
+initial-size=(1391, 824)
 maximized=false
 
 [org/gnome/portal/filechooser/com.usebottles.bottles]
@@ -400,6 +433,7 @@ last-folder-path='/home/max/Downloads'
 night-light-enabled=true
 
 [org/gnome/settings-daemon/plugins/power]
+power-button-action='interactive'
 sleep-inactive-ac-type='nothing'
 
 [org/gnome/shell]
@@ -445,7 +479,7 @@ pinned-apps=[{'id': 'firefox.desktop'}, {'id': 'org.gnome.Terminal.desktop'}]
 pop-folders-data={'Library Home': 'Library Home', 'Utilities': 'gnome core', '4e033a1c-43a8-4df4-bf44-12bb6b390b44': 'settings'}
 power-display-style='Default'
 prefs-visible-page=0
-recently-installed-apps=['net.minetest.minetest.desktop', 'linguist.desktop', 'assistant.desktop', 'qdbusviewer.desktop', 'designer.desktop', 'uxterm.desktop', 'my-distrobox.desktop']
+recently-installed-apps=['net.minetest.minetest.desktop', 'linguist.desktop', 'assistant.desktop', 'qdbusviewer.desktop', 'designer.desktop', 'uxterm.desktop', 'io.github.Rirusha.Cassette.desktop', 'usbview.desktop', 'vlc.desktop', 'kdesystemsettings.desktop', 'org.kde.kuserfeedback-console.desktop']
 search-entry-border-radius=(true, 25)
 search-provider-recent-files=true
 shortcut-icon-type='Full_Color'
@@ -504,7 +538,7 @@ workspace-wrap-around=true
 [org/gnome/shell/extensions/quick-settings-tweaks]
 add-unsafe-quick-toggle-enabled=true
 last-unsafe-state=false
-list-buttons='[{"name":"SystemItem","title":null,"visible":true},{"name":"Notifications","title":null,"visible":false},{"name":"OutputStreamSlider","title":null,"visible":false},{"name":"InputStreamSlider","title":null,"visible":false},{"name":"St_BoxLayout","title":null,"visible":true},{"name":"BrightnessItem","title":null,"visible":false},{"name":"NMWiredToggle","title":"Wired","visible":true},{"name":"NMWirelessToggle","title":null,"visible":false},{"name":"NMModemToggle","title":null,"visible":false},{"name":"NMBluetoothToggle","title":null,"visible":false},{"name":"NMVpnToggle","title":null,"visible":false},{"name":"BluetoothToggle","title":"Bluetooth","visible":false},{"name":"PowerProfilesToggle","title":"Power Mode","visible":false},{"name":"NightLightToggle","title":"Night Light","visible":true},{"name":"DarkModeToggle","title":"Dark Style","visible":true},{"name":"KeyboardBrightnessToggle","title":"Keyboard","visible":false},{"name":"RfkillToggle","title":"Airplane Mode","visible":false},{"name":"RotationToggle","title":"Auto Rotate","visible":false},{"name":"DndQuickToggle","title":"Do Not Disturb","visible":true},{"name":"UnsafeQuickToggle","title":"Unsafe Mode","visible":true},{"name":"BackgroundAppsToggle","title":"No Background Apps","visible":false},{"name":"MediaSection","title":null,"visible":false}]'
+list-buttons='[{"name":"SystemItem","title":null,"visible":true},{"name":"Notifications","title":null,"visible":false},{"name":"OutputStreamSlider","title":null,"visible":true},{"name":"InputStreamSlider","title":null,"visible":false},{"name":"St_BoxLayout","title":null,"visible":true},{"name":"BrightnessItem","title":null,"visible":false},{"name":"NMWiredToggle","title":"Wired","visible":true},{"name":"NMWirelessToggle","title":null,"visible":false},{"name":"NMModemToggle","title":null,"visible":false},{"name":"NMBluetoothToggle","title":null,"visible":false},{"name":"NMVpnToggle","title":null,"visible":false},{"name":"BluetoothToggle","title":"Bluetooth","visible":false},{"name":"PowerProfilesToggle","title":"Power Mode","visible":false},{"name":"NightLightToggle","title":"Night Light","visible":true},{"name":"DarkModeToggle","title":"Dark Style","visible":true},{"name":"KeyboardBrightnessToggle","title":"Keyboard","visible":false},{"name":"RfkillToggle","title":"Airplane Mode","visible":false},{"name":"RotationToggle","title":"Auto Rotate","visible":false},{"name":"DndQuickToggle","title":"Do Not Disturb","visible":true},{"name":"UnsafeQuickToggle","title":"Unsafe Mode","visible":true},{"name":"BackgroundAppsToggle","title":"No Background Apps","visible":false},{"name":"MediaSection","title":null,"visible":false}]'
 media-control-compact-mode=true
 media-control-enabled=true
 notifications-position='top'
@@ -560,5 +594,5 @@ sort-column='name'
 sort-directories-first=false
 sort-order='ascending'
 type-format='category'
-window-position=(46, 131)
+window-position=(240, 131)
 window-size=(1203, 902)

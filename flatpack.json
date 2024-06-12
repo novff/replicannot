@@ -30,6 +30,12 @@
                     "repo": "flathub",
                     "version": "latest",
                     "pin": false
+                },
+                {
+                    "name": "pm.mirko.Atoms",
+                    "repo": "flathub",
+                    "version": "latest",
+                    "pin": false
                 }
             ]
         }
