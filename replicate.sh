@@ -10,19 +10,19 @@ df=$cwd/configs/dotfiles
 	cp -r $cwd/flatpack.json ~/.config/flatpak-sync/flatpak.json
 #install packages from arch repo which are explicitly found in repo
 	sudo sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
-	sudo pacman -S --noconfirm --needed - < packages.txt
+	#sudo pacman -S --noconfirm --needed - < packages.txt
 #install yay-bin
 	git clone https://aur.archlinux.org/yay-bin.git && cd yay-bin
 	makepkg -si
 	cd ..
 	rm -rf yay-bin
 #install packages from yay
-	yay -S --quiet --noconfirm --sudoloop $(cat aur.txt)
+	#yay -S --quiet --noconfirm --sudoloop $(cat aur.txt)
 #install flatpak and flatpak-sync with its deps
 	sudo pacman -S --noconfirm --needed flatpak python python-pip
 	pip install --user flatpak-sync --break-system-packages
 #install flatpak packages
-	~/.local/bin/flatpak-sync run -v
+	#~/.local/bin/flatpak-sync run -v
 #emplace gnome extensions
 	cp -r $df/extensions ~/.local/share/gnome-shell/extensions/
 #restore settings from dconf
