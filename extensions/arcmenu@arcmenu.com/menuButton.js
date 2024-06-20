@@ -314,14 +314,26 @@ class ArcMenuMenuButton extends PanelMenu.Button {
 
     vfunc_event(event) {
         if (event.type() === Clutter.EventType.BUTTON_PRESS) {
-            if (event.get_button() === Clutter.BUTTON_PRIMARY || event.get_button() === Clutter.BUTTON_MIDDLE)
+            const clickAction = this._getClickActionForButton(event.get_button());
+            if (clickAction === Constants.MenuButtonClickAction.ARCMENU)
                 this.toggleMenu();
-            else if (event.get_button() === Clutter.BUTTON_SECONDARY)
+            else if (clickAction === Constants.MenuButtonClickAction.CONTEXT_MENU)
                 this.arcMenuContextMenu.toggle();
         } else if (event.type() === Clutter.EventType.TOUCH_BEGIN) {
             this.toggleMenu();
         }
         return Clutter.EVENT_PROPAGATE;
+    }
+
+    _getClickActionForButton(button) {
+        if (button === Clutter.BUTTON_PRIMARY)
+            return this._settings.get_enum('menu-button-left-click-action');
+        else if (button === Clutter.BUTTON_SECONDARY)
+            return this._settings.get_enum('menu-button-right-click-action');
+        else if (button === Clutter.BUTTON_MIDDLE)
+            return this._settings.get_enum('menu-button-middle-click-action');
+        else
+            return -1;
     }
 
     closeOtherMenus() {

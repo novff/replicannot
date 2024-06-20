@@ -8,24 +8,28 @@ volume=0.054054054054054057
 window-maximized=false
 window-width=753
 
+[io/github/realmazharhussain/GdmSettings/window-state]
+last-visited-page='appearance'
+
 [io/missioncenter/MissionCenter]
-apps-page-sorting-column='Cpu'
-apps-page-sorting-order='Descending'
+apps-page-merged-process-stats=true
+apps-page-sorting-column='None'
+apps-page-sorting-order='None'
 performance-page-cpu-graph=2
-performance-selected-page='cpu'
+performance-selected-page='0000:01:00.0'
 window-height=1080
-window-selected-page='apps-page'
+window-selected-page='performance-page'
 window-width=1920
 
 [org/gnome/Console]
-font-scale=1.5
+font-scale=2.0000000000000004
 last-window-maximised=false
-last-window-size=(1123, 735)
+last-window-size=(1254, 724)
 
 [org/gnome/Extensions]
 window-height=500
-window-maximized=false
-window-width=800
+window-maximized=true
+window-width=1280
 
 [org/gnome/Weather]
 locations=[<(uint32 2, <('Moscow', 'UUWW', true, [(0.97127572873484425, 0.65042604039431762)], [(0.97305983920281813, 0.65651530216830811)])>)>]
@@ -200,8 +204,8 @@ panel-id='world'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='system'
-window-state=(980, 806, false)
+last-panel='bluetooth'
+window-state=(883, 760, false)
 
 [org/gnome/desktop/a11y/applications]
 screen-reader-enabled=false
@@ -252,12 +256,17 @@ xkb-options=['grp:alt_shift_toggle']
 clock-show-seconds=true
 clock-show-weekday=true
 color-scheme='prefer-dark'
-cursor-theme='macOS'
+cursor-theme='Windows-10-Light'
+document-font-name='Cantarell 11'
 enable-animations=true
 enable-hot-corners=false
+font-antialiasing='rgba'
+font-hinting='full'
+font-name='Cantarell 11'
 gtk-theme='Adwaita'
 icon-theme='Adwaita'
 overlay-scrolling=false
+toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
 application-children=['org-gnome-console', 'gnome-power-panel', 'google-chrome', 'org-gnome-software', 'org-gnome-tweaks', 'com-usebottles-bottles', 'org-gnome-epiphany', 'vesktop', 'dde-store', 'org-manjaro-pamac-manager', 'org-gnome-baobab', 'org-gnome-nautilus', 'org-gnome-extensions']
@@ -335,8 +344,10 @@ event-sounds=false
 theme-name='__custom'
 
 [org/gnome/desktop/wm/keybindings]
+maximize=@as []
 switch-applications=['<Alt>Tab']
 switch-applications-backward=['<Shift><Alt>Tab']
+unmaximize=@as []
 
 [org/gnome/desktop/wm/preferences]
 button-layout='appmenu:minimize,maximize,close'
@@ -352,6 +363,10 @@ width=1000
 default-search-engine='Google'
 restore-session-policy='crashed'
 search-engine-providers=[{'url': <'https://www.bing.com/search?q=%s'>, 'bang': <'!b'>, 'name': <'Bing'>}, {'url': <'https://duckduckgo.com/?q=%s&t=epiphany'>, 'bang': <'!ddg'>, 'name': <'DuckDuckGo'>}, {'url': <'https://www.google.com/search?q=%s'>, 'bang': <'!g'>, 'name': <'Google'>}]
+
+[org/gnome/epiphany/state]
+is-maximized=true
+window-size=(1920, 1080)
 
 [org/gnome/epiphany/web]
 ask-on-download=false
@@ -383,8 +398,8 @@ size=(969, 782)
 state=87168
 
 [org/gnome/gnome-system-monitor]
-current-tab='processes'
-maximized=false
+current-tab='disks'
+maximized=true
 show-dependencies=false
 show-whose-processes='user'
 window-height=480
@@ -405,14 +420,21 @@ sort-order=0
 
 [org/gnome/mutter]
 center-new-windows=true
+edge-tiling=false
 overlay-key='Super_L'
 
+[org/gnome/mutter/keybindings]
+toggle-tiled-left=@as []
+toggle-tiled-right=@as []
+
 [org/gnome/nautilus/list-view]
+default-column-order=['name', 'size', 'type', 'owner', 'group', 'permissions', 'date_modified', 'date_accessed', 'date_created', 'recency', 'detailed_type']
+default-visible-columns=['name', 'size', 'date_modified']
 default-zoom-level='small'
 
 [org/gnome/nautilus/preferences]
 date-time-format='detailed'
-default-folder-viewer='icon-view'
+default-folder-viewer='list-view'
 migrated-gtk-settings=true
 search-filter-time-type='last_modified'
 show-create-link=true
@@ -420,7 +442,7 @@ show-delete-permanently=false
 show-image-thumbnails='always'
 
 [org/gnome/nautilus/window-state]
-initial-size=(1391, 824)
+initial-size=(1077, 824)
 maximized=false
 
 [org/gnome/portal/filechooser/com.usebottles.bottles]
@@ -441,7 +463,7 @@ app-picker-layout=[{'bssh.desktop': <{'position': <0>}>, 'org.gnome.Weather.desk
 disable-extension-version-validation=true
 disable-user-extensions=false
 disabled-extensions=@as []
-enabled-extensions=['dash-to-panel@jderose9.github.com', 'ding@rastersoft.com', 'arcmenu@arcmenu.com', 'windowIsReady_Remover@nunofarruca@gmail.com', 'remove-alt-tab-delay@vrba.dev', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'gnome-visuals-top-bar@evendanan.net', 'app-hider@lynith.dev', 'quick-settings-tweaks@qwreey', 'trayIconsReloaded@selfmade.pl', 'rounded-window-corners@yilozt', 'just-perfection-desktop@just-perfection']
+enabled-extensions=['dash-to-panel@jderose9.github.com', 'ding@rastersoft.com', 'arcmenu@arcmenu.com', 'windowIsReady_Remover@nunofarruca@gmail.com', 'remove-alt-tab-delay@vrba.dev', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'gnome-visuals-top-bar@evendanan.net', 'app-hider@lynith.dev', 'quick-settings-tweaks@qwreey', 'trayIconsReloaded@selfmade.pl', 'rounded-window-corners@yilozt', 'just-perfection-desktop@just-perfection', 'speedinator@liam.moe', 'wintile@nowsci.com', 'tiling-assistant@leleat-on-github', 'remove-alt-tab-delay@daase.net']
 favorite-apps=['google-chrome.desktop', 'org.gnome.Nautilus.desktop', 'steam.desktop', 'vesktop.desktop', 'org.gnome.Console.desktop']
 welcome-dialog-last-shown-version='46.2'
 
@@ -479,7 +501,7 @@ pinned-apps=[{'id': 'firefox.desktop'}, {'id': 'org.gnome.Terminal.desktop'}]
 pop-folders-data={'Library Home': 'Library Home', 'Utilities': 'gnome core', '4e033a1c-43a8-4df4-bf44-12bb6b390b44': 'settings'}
 power-display-style='Default'
 prefs-visible-page=0
-recently-installed-apps=['net.minetest.minetest.desktop', 'linguist.desktop', 'assistant.desktop', 'qdbusviewer.desktop', 'designer.desktop', 'uxterm.desktop', 'io.github.Rirusha.Cassette.desktop', 'usbview.desktop', 'vlc.desktop', 'kdesystemsettings.desktop', 'org.kde.kuserfeedback-console.desktop']
+recently-installed-apps=['net.minetest.minetest.desktop', 'linguist.desktop', 'assistant.desktop', 'qdbusviewer.desktop', 'designer.desktop', 'uxterm.desktop', 'io.github.Rirusha.Cassette.desktop', 'usbview.desktop', 'vlc.desktop', 'kdesystemsettings.desktop', 'org.kde.kuserfeedback-console.desktop', 'wine-Programs-Wine Accessories-Task Manager.desktop', 'wine-Programs-Wine Accessories-Wine Configuration.desktop', 'wine-Programs-Wine Accessories-Wineboot.desktop', 'wine-Programs-Wine Accessories-WinVer.desktop']
 search-entry-border-radius=(true, 25)
 search-provider-recent-files=true
 shortcut-icon-type='Full_Color'
@@ -493,7 +515,7 @@ animate-appicon-hover-animation-extent={'RIPPLE': 4, 'PLANK': 4, 'SIMPLE': 1}
 appicon-margin=6
 appicon-padding=6
 appicon-style='NORMAL'
-available-monitors=[1, 0]
+available-monitors=[0, 1]
 dot-position='BOTTOM'
 dot-style-focused='DOTS'
 dot-style-unfocused='DOTS'
@@ -512,7 +534,7 @@ panel-element-positions-monitors-sync=true
 panel-lengths='{"0":100,"1":100}'
 panel-positions='{"0":"BOTTOM","1":"BOTTOM"}'
 panel-sizes='{"0":52,"1":52}'
-primary-monitor=1
+primary-monitor=0
 secondarymenu-contains-showdetails=true
 show-favorites=true
 status-icon-padding=-1
@@ -530,15 +552,21 @@ icon-size='small'
 show-home=true
 show-network-volumes=true
 
+[org/gnome/shell/extensions/gtile]
+global-auto-tiling=true
+
 [org/gnome/shell/extensions/just-perfection]
 panel=true
 theme=true
 workspace-wrap-around=true
 
+[org/gnome/shell/extensions/moe/liam/speedinator]
+speed=0.25
+
 [org/gnome/shell/extensions/quick-settings-tweaks]
 add-unsafe-quick-toggle-enabled=true
 last-unsafe-state=false
-list-buttons='[{"name":"SystemItem","title":null,"visible":true},{"name":"Notifications","title":null,"visible":false},{"name":"OutputStreamSlider","title":null,"visible":true},{"name":"InputStreamSlider","title":null,"visible":false},{"name":"St_BoxLayout","title":null,"visible":true},{"name":"BrightnessItem","title":null,"visible":false},{"name":"NMWiredToggle","title":"Wired","visible":true},{"name":"NMWirelessToggle","title":null,"visible":false},{"name":"NMModemToggle","title":null,"visible":false},{"name":"NMBluetoothToggle","title":null,"visible":false},{"name":"NMVpnToggle","title":null,"visible":false},{"name":"BluetoothToggle","title":"Bluetooth","visible":false},{"name":"PowerProfilesToggle","title":"Power Mode","visible":false},{"name":"NightLightToggle","title":"Night Light","visible":true},{"name":"DarkModeToggle","title":"Dark Style","visible":true},{"name":"KeyboardBrightnessToggle","title":"Keyboard","visible":false},{"name":"RfkillToggle","title":"Airplane Mode","visible":false},{"name":"RotationToggle","title":"Auto Rotate","visible":false},{"name":"DndQuickToggle","title":"Do Not Disturb","visible":true},{"name":"UnsafeQuickToggle","title":"Unsafe Mode","visible":true},{"name":"BackgroundAppsToggle","title":"No Background Apps","visible":false},{"name":"MediaSection","title":null,"visible":false}]'
+list-buttons='[{"name":"SystemItem","title":null,"visible":true},{"name":"Notifications","title":null,"visible":true},{"name":"OutputStreamSlider","title":null,"visible":false},{"name":"InputStreamSlider","title":null,"visible":false},{"name":"St_BoxLayout","title":null,"visible":true},{"name":"BrightnessItem","title":null,"visible":false},{"name":"NMWiredToggle","title":null,"visible":false},{"name":"NMWirelessToggle","title":"Wi-Fi","visible":true},{"name":"NMModemToggle","title":null,"visible":false},{"name":"NMBluetoothToggle","title":null,"visible":false},{"name":"NMVpnToggle","title":null,"visible":false},{"name":"BluetoothToggle","title":"Bluetooth","visible":true},{"name":"PowerProfilesToggle","title":"Power Mode","visible":false},{"name":"NightLightToggle","title":"Night Light","visible":true},{"name":"DarkModeToggle","title":"Dark Style","visible":true},{"name":"KeyboardBrightnessToggle","title":"Keyboard","visible":false},{"name":"RfkillToggle","title":"Airplane Mode","visible":false},{"name":"RotationToggle","title":"Auto Rotate","visible":false},{"name":"DndQuickToggle","title":"Do Not Disturb","visible":true},{"name":"UnsafeQuickToggle","title":"Unsafe Mode","visible":true},{"name":"BackgroundAppsToggle","title":"No Background Apps","visible":false},{"name":"MediaSection","title":null,"visible":false}]'
 media-control-compact-mode=true
 media-control-enabled=true
 notifications-position='top'
@@ -549,6 +577,11 @@ volume-mixer-enabled=true
 volume-mixer-position='top'
 volume-mixer-show-description=true
 volume-mixer-show-icon=true
+
+[org/gnome/shell/extensions/tiling-assistant]
+active-window-hint-color='rgb(82,113,173)'
+last-version-installed=47
+overridden-settings={'org.gnome.mutter.edge-tiling': <@mb nothing>, 'org.gnome.desktop.wm.keybindings.maximize': <@mb nothing>, 'org.gnome.desktop.wm.keybindings.unmaximize': <@mb nothing>, 'org.gnome.mutter.keybindings.toggle-tiled-left': <@mb nothing>, 'org.gnome.mutter.keybindings.toggle-tiled-right': <@mb nothing>}
 
 [org/gnome/shell/extensions/user-theme]
 name='WhiteSur-Dark-solid-nord'
@@ -564,7 +597,7 @@ locations=[<(uint32 2, <('Moscow', 'UUWW', true, [(0.97127572873484425, 0.650426
 locations=@av []
 
 [org/gnome/software]
-check-timestamp=int64 1717294224
+check-timestamp=int64 1718890695
 first-run=false
 flatpak-purge-timestamp=int64 1717289540
 
@@ -574,7 +607,7 @@ show-extensions-notice=false
 [org/gtk/gtk4/settings/file-chooser]
 date-format='regular'
 location-mode='path-bar'
-show-hidden=false
+show-hidden=true
 sidebar-width=140
 sort-column='name'
 sort-directories-first=true

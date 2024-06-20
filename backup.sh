@@ -15,7 +15,7 @@ df=$cwd/configs/dotfiles
 	#how doe
 #extract gnome extensions
 #gnome-extensions list -d> ./gnomeext.txt
-	cp -r ~/.local/share/gnome-shell/extensions/ ./extensions
+	cp -r ~/.local/share/gnome-shell/extensions/ ./
 
 #extract settings for desktop via dconf
 	dconf dump / > dconf.txt
