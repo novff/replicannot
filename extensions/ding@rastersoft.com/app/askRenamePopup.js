@@ -27,8 +27,7 @@ const Gettext = imports.gettext.domain('ding');
 const _ = Gettext.gettext;
 
 var AskRenamePopup = class {
-    constructor(extensionManager, fileItem, allowReturnOnSameName, closeCB) {
-        this._extensionManager = extensionManager
+    constructor(fileItem, allowReturnOnSameName, closeCB) {
         this._closeCB = closeCB;
         this._allowReturnOnSameName = allowReturnOnSameName;
         this._desktopPath = GLib.get_user_special_dir(GLib.UserDirectory.DIRECTORY_DESKTOP);
@@ -57,7 +56,6 @@ var AskRenamePopup = class {
         this._buttonId = this._button.connect('clicked', this._do_rename.bind(this));
         this._textAreaChangedId = this._textArea.connect('changed', this._validate.bind(this));
         this._textAreaActivateId = this._textArea.connect('activate', this._do_rename.bind(this));
-        this._extensionManager.showPopup();
         this._popoverId = this._popover.connect('closed', this._cleanAll.bind(this));
         this._textArea.set_can_default(true);
         this._popover.set_default_widget(this._textArea);
@@ -74,7 +72,6 @@ var AskRenamePopup = class {
         this._textArea.disconnect(this._textAreaActivateId);
         this._textArea.disconnect(this._textAreaChangedId);
         this._popover.disconnect(this._popoverId);
-        this._extensionManager.hidePopup();
         this._closeCB();
     }
 

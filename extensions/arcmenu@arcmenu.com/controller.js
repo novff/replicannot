@@ -299,38 +299,37 @@ export const MenuSettingsController = class {
     }
 
     _updateHotKeyBinder() {
-        if (!this.isPrimaryPanel)
-            return;
+        if (this.isPrimaryPanel) {
+            const [runnerHotkey] = this._settings.get_strv('runner-hotkey');
+            const [menuHotkey] = this._settings.get_strv('arcmenu-hotkey');
 
-        const [runnerHotkey] = this._settings.get_strv('runner-hotkey');
-        const [menuHotkey] = this._settings.get_strv('arcmenu-hotkey');
-
-        this._customKeybinding.unbind('ToggleArcMenu');
-        this._customKeybinding.unbind('ToggleRunnerMenu');
-        this._overrideOverlayKey.disable();
-
-        if (runnerHotkey) {
-            if (!this.runnerMenu) {
-                this.runnerMenu = new StandaloneRunner();
-                this.runnerMenu.initiate();
-            }
-            if (runnerHotkey === Constants.SUPER_L) {
-                this._overrideOverlayKey.enable(() => this.toggleStandaloneRunner());
-            } else {
-                this._customKeybinding.bind('ToggleRunnerMenu', 'runner-hotkey',
-                    () => this.toggleStandaloneRunner());
-            }
-        } else if (this.runnerMenu) {
-            this.runnerMenu.destroy();
-            this.runnerMenu = null;
-        }
-
-        if (menuHotkey === Constants.SUPER_L) {
+            this._customKeybinding.unbind('ToggleArcMenu');
+            this._customKeybinding.unbind('ToggleRunnerMenu');
             this._overrideOverlayKey.disable();
-            this._overrideOverlayKey.enable(() => this.toggleMenus());
-        } else if (menuHotkey) {
-            this._customKeybinding.bind('ToggleArcMenu', 'arcmenu-hotkey',
-                () => this.toggleMenus());
+
+            if (runnerHotkey) {
+                if (!this.runnerMenu) {
+                    this.runnerMenu = new StandaloneRunner();
+                    this.runnerMenu.initiate();
+                }
+                if (runnerHotkey === Constants.SUPER_L) {
+                    this._overrideOverlayKey.enable(() => this.toggleStandaloneRunner());
+                } else {
+                    this._customKeybinding.bind('ToggleRunnerMenu', 'runner-hotkey',
+                        () => this.toggleStandaloneRunner());
+                }
+            } else if (this.runnerMenu) {
+                this.runnerMenu.destroy();
+                this.runnerMenu = null;
+            }
+
+            if (menuHotkey === Constants.SUPER_L) {
+                this._overrideOverlayKey.disable();
+                this._overrideOverlayKey.enable(() => this.toggleMenus());
+            } else if (menuHotkey) {
+                this._customKeybinding.bind('ToggleArcMenu', 'arcmenu-hotkey',
+                    () => this.toggleMenus());
+            }
         }
     }
 
