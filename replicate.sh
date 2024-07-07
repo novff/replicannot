@@ -10,7 +10,7 @@ df=$cwd/configs/dotfiles
 	cp -r $cwd/flatpack.json ~/.config/flatpak-sync/flatpak.json
 #install packages from arch repo which are explicitly found in repo
 	sudo sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
-	sudo pacman -S --noconfirm --needed - < packages.txt
+	sudo pacman -S --noconfirm --needed - < pkg.txt
 #install yay-bin
 	git clone https://aur.archlinux.org/yay-bin.git && cd yay-bin
 	makepkg -si
