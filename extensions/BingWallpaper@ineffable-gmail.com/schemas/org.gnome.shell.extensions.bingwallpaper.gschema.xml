@@ -1,0 +1,249 @@
+<schemalist gettext-domain="gnome-shell-extensions">
+
+  <schema id="org.gnome.shell.extensions.bingwallpaper"
+      path="/org/gnome/shell/extensions/bingwallpaper/">
+
+    <key name="hide" type="b">
+      <default>false</default>
+        <summary>Hide indicator</summary>
+        <description>Hide indicator icon from status area</description>
+    </key>
+
+    <key name="notify" type="b">
+      <default>false</default>
+        <summary>Send a notifications</summary>
+        <description>Send a notification with explanation when a new image is available</description>
+    </key>
+
+    <key name="notify-only-latest" type="b">
+      <default>true</default>
+        <summary>Send a notifications only on most recent image</summary>
+        <description>Notify only the most recent image, in combination with 'notify' setting</description>
+    </key>
+
+    <key name="transient" type="b">
+      <default>true</default>
+        <summary>Use transient notifications (auto dismiss)</summary>
+        <description></description>
+    </key>
+
+    <key name="set-background" type="b">
+      <default>true</default>
+        <summary>Set background</summary>
+        <description>Set background to Bing's background</description>
+    </key>
+
+    <key name="set-lock-screen" type="b">
+      <default>false</default>
+        <summary>Set lock screen</summary>
+        <description>Set lock screen to Bing's background</description>
+    </key>
+
+    <key name="download-folder" type="s">
+      <default>""</default>
+      <summary>Where to download pictures.</summary>
+      <description></description>
+    </key>
+
+    <key name="market" type="s">
+      <default>"auto"</default>
+      <summary>Default Market for Bing</summary>
+      <description></description>
+    </key>
+
+    <key name="resolution" type="s">
+      <default>"auto"</default>
+      <summary>Screen Size</summary>
+      <description>Valid sizes are '800x600', '1024x768', '1280x720', '1280x768', '1366x768', '1920x1080', '1920x1200' and 'UHD'</description>
+    </key>
+
+    <key name="debug-logging" type="b">
+      <default>false</default>
+        <summary>Log messages to systemd journal</summary>
+        <description>Unlikely to be useful for ordinary users, but helpful for debugging</description>
+    </key>
+    
+    <key name="delete-previous" type="b">
+      <default>false</default>
+        <summary>Delete previous wallpapers</summary>
+        <description>Save disk space</description>
+    </key>
+
+    <key name="previous-days" type="i">
+      <default>8</default>
+      <summary>Number of days to keep wallpapers</summary>
+      <description>Delete wallpapers after this number of days</description>
+    </key>
+
+    <key name="replace-watermark" type="s">
+      <default>""</default>
+      <summary>Replace or remove Bing watermark on high-res images</summary>
+      <description>Set to "none", "Gnome" or "Ubuntu"</description>
+    </key>
+
+     <key name="icon-name" type="s">
+      <default>"bing-symbolic"</default>
+      <summary>Icon Name</summary>
+      <description>Icon filename to use for extension applet</description>
+    </key>
+
+    <key name="override-wp-flag" type="b">
+      <default>false</default>
+      <summary>Ignore Bing permitted for use as wallpaper flag</summary>
+      <description>Used when wallpaper is animated, or not licensed for wallpaper use</description>
+    </key>
+
+    <key name="override-lockscreen-blur" type="b">
+      <default>false</default>
+      <summary>Override GNOME lockscreen (gdm3) wallpaper blur</summary>
+      <description>Applies to GNOME 3.36 and above only</description>
+    </key>
+
+    <key name="lockscreen-blur-strength" type="i">
+      <range min="0" max="100" />
+      <default>2</default>
+      <summary>GNOME lockscreen (gdm3) wallpaper blur strength</summary>
+      <description>Degree of fuzziness</description>
+    </key>
+
+    <key name="lockscreen-blur-brightness" type="i">
+      <range min="0" max="100" />
+      <default>50</default>
+      <summary>GNOME lockscreen (gdm3) wallpaper blur Brightness</summary>
+      <description>Used to darken the wallpaper to improve visibility</description>
+    </key>
+
+    <key name="selected-image" type="s">
+      <default>"current"</default>
+      <summary>Use older Bing image, select by filename</summary>
+      <description></description>
+    </key>
+
+    <key name="revert-to-current-image" type="b">
+      <default>true</default>
+      <summary>Revert to showing the current image when a new one arrives</summary>
+      <description>This setting may best reflect what users want from selectable or random images</description>
+    </key>
+
+    <key name="state" type="s">
+      <default>"[]"</default>
+      <summary>Store state in JSON format so we can restore details immediately on boot</summary>
+      <description></description>
+    </key>
+
+    <key name="bing-json" type="s">
+      <default>"[]"</default>
+      <summary>Store Bing image details for rollback</summary>
+      <description></description>
+    </key>
+
+    <key name="random-interval-mode" type="s">
+      <default>"daily"</default>
+      <summary>Set to either 'daily', 'hourly', 'weekly', 'custom'</summary>
+      <description>Daily is midnight, hourly is on the hour, weekly is midnight on Sunday, or custom as defined by the 'random-interval'</description>
+    </key>
+
+    <key name="random-interval" type="i">
+      <range min="300" max="86400" />
+      <default>3600</default>
+      <summary>How frequently to change the wallpaper when on random mode</summary>
+      <description></description>
+    </key>
+
+    <key name="random-mode-include-only-favourites" type="b">
+      <default>false</default>
+      <summary>Only pick from favourites in random mode</summary>
+      <description></description>
+    </key>
+
+    <key name="random-mode-enabled" type="b">
+      <default>false</default>
+      <summary>Pick a random image at random-interval</summary>
+      <description></description>
+    </key>
+
+    <key name="random-mode-include-only-uhd" type="b">
+      <default>false</default>
+      <summary>Only pick from UHD in random mode</summary>
+      <description></description>
+    </key>
+
+    <key name="random-mode-include-only-unhidden" type="b">
+      <default>true</default>
+      <summary>Only pick from unhidden in random mode</summary>
+      <description></description>
+    </key>
+
+    <key name="override-unsafe-wayland" type="b">
+      <default>true</default>
+      <summary>Override safe defaults for Wayland desktop</summary>
+      <description>Enables features which may or may not be unstable or untested in all cases</description>
+    </key>
+
+    <key name="create-thumbs" type="b">
+      <default>true</default>
+      <summary>Create thumbnails to speed up image gallery loading</summary>
+      <description>Speeds up subsequent loads, but requires some additional disk space</description>
+    </key>
+
+    <key name="min-uhd-height" type="i">
+      <range min="1080" max="3000" />
+      <default>2160</default>
+      <summary>Minimum image height to be considered UHD</summary>
+      <description></description>
+    </key>
+
+    <key name="always-export-bing-json" type="b">
+      <default>false</default>
+      <summary>Save backup copy of Bing JSON to wallpaper directory</summary>
+      <description>Enables migration to new install or restoration from back up</description>
+    </key>
+
+    <key name="show-count-in-image-title" type="b">
+      <default>false</default>
+      <summary>Include current index and total image count in image title</summary>
+    </key>
+
+    <key name="controls-icon-size" type="i">
+      <range min="16" max="48" />
+      <default>32</default>
+      <summary>Size of icons for controls in popup menu</summary>
+    </key>
+
+    <key name="trash-deletes-images" type="b">
+      <default>true</default>
+      <summary>Trash deletes images or just marks as bad</summary>
+    </key>
+    
+    <!-- not currently used
+    <key name="gallery-width" type="i">
+      <range min="1000" max="9600" />
+      <default>1600</default>
+      <summary>Gallery window width</summary>
+      <description></description>
+    </key>
+
+    <key name="gallery-height" type="i">
+      <range min="700" max="9600" />
+      <default>800</default>
+      <summary>Gallery window height</summary>
+      <description></description>
+    </key>
+
+    <key name="gallery-top" type="i">
+      <range min="0" max="9600" />
+      <default>30</default>
+      <summary>Gallery window x-pos</summary>
+      <description></description>
+    </key>
+
+    <key name="gallery-left" type="i">
+      <range min="0" max="9600" />
+      <default>30</default>
+      <summary>Gallery window y-pos</summary>
+      <description></description>
+    </key>
+    -->
+
+  </schema>
+</schemalist>

@@ -12,14 +12,7 @@
                     "type": ""
                 }
             ],
-            "apps": [
-                {
-                    "name": "io.github.Foldex.AdwSteamGtk",
-                    "repo": "flathub",
-                    "version": "latest",
-                    "pin": false
-                }
-            ]
+            "apps": []
         }
     }
 }

@@ -4,8 +4,8 @@ default-pages-set=true
 show-liked=true
 show-main=true
 show-playlists=true
-volume=0.054054054054054057
-window-maximized=false
+volume=0.86486486486486491
+window-maximized=true
 window-width=753
 
 [io/github/realmazharhussain/GdmSettings/window-state]
@@ -17,19 +17,27 @@ apps-page-sorting-column='None'
 apps-page-sorting-order='None'
 performance-page-cpu-graph=2
 performance-selected-page='0000:01:00.0'
-window-height=1080
+window-height=1048
 window-selected-page='performance-page'
-window-width=1920
+window-width=1440
 
 [org/gnome/Console]
-font-scale=2.0000000000000004
+font-scale=0.99999999999999967
 last-window-maximised=false
-last-window-size=(1254, 724)
+last-window-size=(960, 1080)
 
 [org/gnome/Extensions]
-window-height=500
-window-maximized=true
-window-width=1280
+window-height=543
+window-maximized=false
+window-width=726
+
+[org/gnome/Geary]
+compose-as-html=true
+formatting-toolbar-visible=false
+migrated-config=true
+single-key-shortcuts=false
+window-maximize=true
+window-width=1555
 
 [org/gnome/Weather]
 locations=[<(uint32 2, <('Moscow', 'UUWW', true, [(0.97127572873484425, 0.65042604039431762)], [(0.97305983920281813, 0.65651530216830811)])>)>]
@@ -39,7 +47,7 @@ window-width=992
 
 [org/gnome/baobab/ui]
 is-maximized=false
-window-size=(1399, 478)
+window-size=(1400, 477)
 
 [org/gnome/builder]
 window-maximized=true
@@ -204,8 +212,8 @@ panel-id='world'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='bluetooth'
-window-state=(883, 760, false)
+last-panel='online-accounts'
+window-state=(980, 640, false)
 
 [org/gnome/desktop/a11y/applications]
 screen-reader-enabled=false
@@ -238,8 +246,8 @@ translate=true
 [org/gnome/desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///usr/share/backgrounds/gnome/blobs-l.svg'
-picture-uri-dark='file:///usr/share/backgrounds/gnome/blobs-d.svg'
+picture-uri='file:///home/max/Pictures/BingWallpaper/20240709-TalampayaNP_ROW6737136981_UHD.jpg'
+picture-uri-dark='file:///home/max/Pictures/BingWallpaper/20240709-TalampayaNP_ROW6737136981_UHD.jpg'
 primary-color='#241f31'
 secondary-color='#000000'
 
@@ -257,19 +265,20 @@ clock-show-seconds=true
 clock-show-weekday=true
 color-scheme='prefer-dark'
 cursor-theme='Windows-10-Light'
-document-font-name='Cantarell 11'
+document-font-name='Segoe UI Semi-Bold 11'
 enable-animations=true
 enable-hot-corners=false
 font-antialiasing='rgba'
 font-hinting='full'
-font-name='Cantarell 11'
-gtk-theme='Adwaita'
+font-name='Segoe UI Semi-Bold 11'
+gtk-theme='adw-gtk3-dark'
 icon-theme='Adwaita'
+monospace-font-name='Source Code Pro Medium 10'
 overlay-scrolling=false
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['org-gnome-console', 'gnome-power-panel', 'google-chrome', 'org-gnome-software', 'org-gnome-tweaks', 'com-usebottles-bottles', 'org-gnome-epiphany', 'vesktop', 'dde-store', 'org-manjaro-pamac-manager', 'org-gnome-baobab', 'org-gnome-nautilus', 'org-gnome-extensions']
+application-children=['org-gnome-console', 'gnome-power-panel', 'google-chrome', 'org-gnome-software', 'org-gnome-tweaks', 'com-usebottles-bottles', 'org-gnome-epiphany', 'vesktop', 'dde-store', 'org-manjaro-pamac-manager', 'org-gnome-baobab', 'org-gnome-nautilus', 'org-gnome-extensions', 'org-gnome-texteditor', 'org-gnome-geary']
 show-banners=false
 
 [org/gnome/desktop/notifications/application/com-usebottles-bottles]
@@ -296,11 +305,17 @@ application-id='org.gnome.Epiphany.desktop'
 [org/gnome/desktop/notifications/application/org-gnome-extensions]
 application-id='org.gnome.Extensions.desktop'
 
+[org/gnome/desktop/notifications/application/org-gnome-geary]
+application-id='org.gnome.Geary.desktop'
+
 [org/gnome/desktop/notifications/application/org-gnome-nautilus]
 application-id='org.gnome.Nautilus.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-software]
 application-id='org.gnome.Software.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-texteditor]
+application-id='org.gnome.TextEditor.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-tweaks]
 application-id='org.gnome.tweaks.desktop'
@@ -427,9 +442,12 @@ overlay-key='Super_L'
 toggle-tiled-left=@as []
 toggle-tiled-right=@as []
 
+[org/gnome/nautilus/icon-view]
+default-zoom-level='small'
+
 [org/gnome/nautilus/list-view]
 default-column-order=['name', 'size', 'type', 'owner', 'group', 'permissions', 'date_modified', 'date_accessed', 'date_created', 'recency', 'detailed_type']
-default-visible-columns=['name', 'size', 'date_modified']
+default-visible-columns=['name', 'size', 'type', 'owner', 'date_modified']
 default-zoom-level='small'
 
 [org/gnome/nautilus/preferences]
@@ -442,7 +460,7 @@ show-delete-permanently=false
 show-image-thumbnails='always'
 
 [org/gnome/nautilus/window-state]
-initial-size=(1077, 824)
+initial-size=(1172, 550)
 maximized=false
 
 [org/gnome/portal/filechooser/com.usebottles.bottles]
@@ -459,11 +477,11 @@ power-button-action='interactive'
 sleep-inactive-ac-type='nothing'
 
 [org/gnome/shell]
-app-picker-layout=[{'bssh.desktop': <{'position': <0>}>, 'org.gnome.Weather.desktop': <{'position': <1>}>, 'org.gnome.clocks.desktop': <{'position': <2>}>, 'org.gnome.Maps.desktop': <{'position': <3>}>, 'bvnc.desktop': <{'position': <4>}>, 'avahi-discover.desktop': <{'position': <5>}>, 'org.gnome.Totem.desktop': <{'position': <6>}>, '4e033a1c-43a8-4df4-bf44-12bb6b390b44': <{'position': <7>}>, 'qv4l2.desktop': <{'position': <8>}>, 'Utilities': <{'position': <9>}>, 'qvidcap.desktop': <{'position': <10>}>, 'yelp.desktop': <{'position': <11>}>, 'org.gnome.TextEditor.desktop': <{'position': <12>}>, 'org.gnome.Epiphany.desktop': <{'position': <13>}>, 'org.gnome.Calendar.desktop': <{'position': <14>}>, 'org.gnome.Tour.desktop': <{'position': <15>}>, 'org.gnome.Software.desktop': <{'position': <16>}>}]
+app-picker-layout=[{'bssh.desktop': <{'position': <0>}>, 'org.gnome.Weather.desktop': <{'position': <1>}>, 'org.gnome.clocks.desktop': <{'position': <2>}>, 'org.gnome.Maps.desktop': <{'position': <3>}>, 'bvnc.desktop': <{'position': <4>}>, 'avahi-discover.desktop': <{'position': <5>}>, '4e033a1c-43a8-4df4-bf44-12bb6b390b44': <{'position': <6>}>, 'qv4l2.desktop': <{'position': <7>}>, 'Utilities': <{'position': <8>}>, 'org.gnome.Totem.desktop': <{'position': <9>}>, 'qvidcap.desktop': <{'position': <10>}>, 'yelp.desktop': <{'position': <11>}>, 'org.gnome.TextEditor.desktop': <{'position': <12>}>, 'org.gnome.Epiphany.desktop': <{'position': <13>}>, 'org.gnome.Calendar.desktop': <{'position': <14>}>, 'org.gnome.Tour.desktop': <{'position': <15>}>, 'org.gnome.Software.desktop': <{'position': <16>}>, 'io.missioncenter.MissionCenter.desktop': <{'position': <17>}>}]
 disable-extension-version-validation=true
 disable-user-extensions=false
-disabled-extensions=@as []
-enabled-extensions=['dash-to-panel@jderose9.github.com', 'ding@rastersoft.com', 'arcmenu@arcmenu.com', 'windowIsReady_Remover@nunofarruca@gmail.com', 'remove-alt-tab-delay@vrba.dev', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'gnome-visuals-top-bar@evendanan.net', 'app-hider@lynith.dev', 'quick-settings-tweaks@qwreey', 'trayIconsReloaded@selfmade.pl', 'rounded-window-corners@yilozt', 'just-perfection-desktop@just-perfection', 'speedinator@liam.moe', 'wintile@nowsci.com', 'tiling-assistant@leleat-on-github', 'remove-alt-tab-delay@daase.net']
+disabled-extensions=['window-list@gnome-shell-extensions.gcampax.github.com']
+enabled-extensions=['dash-to-panel@jderose9.github.com', 'ding@rastersoft.com', 'arcmenu@arcmenu.com', 'windowIsReady_Remover@nunofarruca@gmail.com', 'remove-alt-tab-delay@vrba.dev', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'gnome-visuals-top-bar@evendanan.net', 'app-hider@lynith.dev', 'quick-settings-tweaks@qwreey', 'trayIconsReloaded@selfmade.pl', 'rounded-window-corners@yilozt', 'just-perfection-desktop@just-perfection', 'speedinator@liam.moe', 'wintile@nowsci.com', 'tiling-assistant@leleat-on-github', 'remove-alt-tab-delay@daase.net', 'rounded-window-corners@fxgn', 'blur-my-shell@aunetx', 'BingWallpaper@ineffable-gmail.com']
 favorite-apps=['google-chrome.desktop', 'org.gnome.Nautilus.desktop', 'steam.desktop', 'vesktop.desktop', 'org.gnome.Console.desktop']
 welcome-dialog-last-shown-version='46.2'
 
@@ -476,6 +494,7 @@ hidden-apps=['rpcs3.desktop']
 [org/gnome/shell/extensions/arcmenu]
 button-padding=-1
 category-icon-type='Full_Color'
+context-menu-items=[{'id': 'org.gnome.Extensions.desktop'}, {'id': 'ArcMenu_Settings', 'name': 'ArcMenu Settings', 'icon': 'ArcMenu_ArcMenuIcon'}, {'id': 'ArcMenu_PanelExtensionSettings', 'name': 'Panel Extension Settings', 'icon': 'application-x-addon-symbolic'}, {'id': 'ArcMenu_Separator', 'name': 'Separator', 'icon': 'list-remove-symbolic'}, {'id': 'ArcMenu_PowerOptions', 'name': 'Power Options', 'icon': 'system-shutdown-symbolic'}, {'id': 'ArcMenu_ActivitiesOverview', 'name': 'Activities Overview', 'icon': 'view-fullscreen-symbolic'}, {'id': 'ArcMenu_ShowDesktop', 'name': 'Show Desktop', 'icon': 'computer-symbolic'}, {'id': 'org.gnome.Console.desktop'}, {'id': 'io.missioncenter.MissionCenter.desktop'}]
 custom-menu-button-icon-size=30.0
 hide-overview-on-startup=true
 left-panel-width=340
@@ -501,13 +520,44 @@ pinned-apps=[{'id': 'firefox.desktop'}, {'id': 'org.gnome.Terminal.desktop'}]
 pop-folders-data={'Library Home': 'Library Home', 'Utilities': 'gnome core', '4e033a1c-43a8-4df4-bf44-12bb6b390b44': 'settings'}
 power-display-style='Default'
 prefs-visible-page=0
-recently-installed-apps=['net.minetest.minetest.desktop', 'linguist.desktop', 'assistant.desktop', 'qdbusviewer.desktop', 'designer.desktop', 'uxterm.desktop', 'io.github.Rirusha.Cassette.desktop', 'usbview.desktop', 'vlc.desktop', 'kdesystemsettings.desktop', 'org.kde.kuserfeedback-console.desktop', 'wine-Programs-Wine Accessories-Task Manager.desktop', 'wine-Programs-Wine Accessories-Wine Configuration.desktop', 'wine-Programs-Wine Accessories-Wineboot.desktop', 'wine-Programs-Wine Accessories-WinVer.desktop']
+recently-installed-apps=['net.minetest.minetest.desktop', 'linguist.desktop', 'assistant.desktop', 'qdbusviewer.desktop', 'designer.desktop', 'uxterm.desktop', 'usbview.desktop', 'kdesystemsettings.desktop', 'org.kde.kuserfeedback-console.desktop', 'wine-Programs-Wine Accessories-Task Manager.desktop', 'wine-Programs-Wine Accessories-Wine Configuration.desktop', 'wine-Programs-Wine Accessories-Wineboot.desktop', 'wine-Programs-Wine Accessories-WinVer.desktop', 'vesktop.desktop']
 search-entry-border-radius=(true, 25)
 search-provider-recent-files=true
 shortcut-icon-type='Full_Color'
 show-activities-button=false
+show-category-sub-menus=false
 vert-separator=true
 windows-disable-pinned-apps=true
+windows-layout-extra-shortcuts=[{'id': 'io.missioncenter.MissionCenter.desktop'}, {'id': 'org.gnome.Nautilus.desktop'}, {'id': 'org.gnome.Console.desktop'}, {'id': 'org.gnome.Settings.desktop'}]
+
+[org/gnome/shell/extensions/bingwallpaper]
+bing-json='[{"startdate":"20240702","fullstartdate":"202407020700","enddate":"20240703","url":"/th?id=OHR.ItalicaRuins_ROW4476572398_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.ItalicaRuins_ROW4476572398","copyright":"Italica, an old Roman city in Santiponce, Sevilla, Andalusia, Spain (© Moses Palermo/Amazing Aerial Agency)","copyrightlink":"https://www.bing.com/search?q=Italica+Spain&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20240702_ItalicaRuins%22&FORM=HPQUIZ","wp":true,"hsh":"17faaa9f2fe81d683fa9ac41be07e5ca","drk":1,"top":1,"bot":1,"hs":[],"width":0,"height":0},{"startdate":"20240703","fullstartdate":"202407030700","enddate":"20240704","url":"/th?id=OHR.MeerkatManor_ROW4817737201_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.MeerkatManor_ROW4817737201","copyright":"Meerkat family (© anetapics/Shutterstock)","copyrightlink":"https://www.bing.com/search?q=Meerkat&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20240703_MeerkatManor%22&FORM=HPQUIZ","wp":true,"hsh":"a3e503c81ded53a676a487ff65015ba6","drk":1,"top":1,"bot":1,"hs":[],"width":0,"height":0},{"startdate":"20240704","fullstartdate":"202407040700","enddate":"20240705","url":"/th?id=OHR.ZaharaDeLaSierra_ROW5111485475_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.ZaharaDeLaSierra_ROW5111485475","copyright":"Zahara de la Sierra, Andalusia, Spain (© Francesco Carovillano/eStock Photo)","copyrightlink":"https://www.bing.com/search?q=Zahara+de+la+Sierra&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20240704_ZaharaDeLaSierra%22&FORM=HPQUIZ","wp":true,"hsh":"83918f49e8e36b7a234c12e3ba71d320","drk":1,"top":1,"bot":1,"hs":[],"width":0,"height":0},{"startdate":"20240705","fullstartdate":"202407050700","enddate":"20240706","url":"/th?id=OHR.NoahBeach_ROW5487354351_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.NoahBeach_ROW5487354351","copyright":"Noah Beach in Daintree Rainforest, Queensland, Australia (© bjeayes/Getty Images)","copyrightlink":"https://www.bing.com/search?q=Daintree+Rainforest&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20240705_NoahBeach%22&FORM=HPQUIZ","wp":true,"hsh":"368e5d87f02520961d30d0d43b722ae5","drk":1,"top":1,"bot":1,"hs":[],"width":0,"height":0},{"startdate":"20240706","fullstartdate":"202407060700","enddate":"20240707","url":"/th?id=OHR.ConwyRiver_ROW6100023169_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.ConwyRiver_ROW6100023169","copyright":"Conwy Castle looking over the River Conwy, Wales (© David Chapman/Alamy)","copyrightlink":"https://www.bing.com/search?q=Conwy+Castle+Wales&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20240706_ConwyRiver%22&FORM=HPQUIZ","wp":true,"hsh":"4f248046a562287f5e538c4d9cfefd28","drk":1,"top":1,"bot":1,"hs":[],"width":0,"height":0},{"startdate":"20240707","fullstartdate":"202407070700","enddate":"20240708","url":"/th?id=OHR.YenBaiTerraces_ROW6260255257_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.YenBaiTerraces_ROW6260255257","copyright":"Rice terraces of Mù Cang Chải, Yên Bái province, Vietnam (© Kiatanan Sugsompian/Getty Images)","copyrightlink":"https://www.bing.com/search?q=Rice+terraces+of+Mu+Cang+Chai&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20240707_YenBaiTerraces%22&FORM=HPQUIZ","wp":true,"hsh":"6c611d209409cfc51bc9cc9fbd65e925","drk":1,"top":1,"bot":1,"hs":[],"width":0,"height":0},{"startdate":"20240708","fullstartdate":"202407080700","enddate":"20240709","url":"/th?id=OHR.NorwayBlueberries_ROW6499030232_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.NorwayBlueberries_ROW6499030232","copyright":"Blueberries growing in the wild (© Baac3nes/Getty Images)","copyrightlink":"https://www.bing.com/search?q=Blueberry&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20240708_NorwayBlueberries%22&FORM=HPQUIZ","wp":true,"hsh":"c4258ed68281039dda2506c18fd079b9","drk":1,"top":1,"bot":1,"hs":[],"width":0,"height":0},{"startdate":"20240709","fullstartdate":"202407090700","enddate":"20240710","url":"/th?id=OHR.TalampayaNP_ROW6737136981_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.TalampayaNP_ROW6737136981","copyright":"Talampaya National Park, La Rioja province, Argentina (© Gonzalo Azumendi/Getty Images)","copyrightlink":"https://www.bing.com/search?q=Talampaya+National+Park+Argentina&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20240709_TalampayaNP%22&FORM=HPQUIZ","wp":true,"hsh":"e8fd6ebd313def7eacf8783fb152b7d2","drk":1,"top":1,"bot":1,"hs":[],"width":0,"height":0}]'
+download-folder='~/Pictures/BingWallpaper/'
+icon-name='high-frame-symbolic'
+selected-image='TalampayaNP_ROW6737136981'
+state='{"maxlongdate":202407090700,"title":"Talampaya National Park, La Rioja province, Argentina","explanation":"Bing Wallpaper of the Day for 2024-07-09","copyright":"© Gonzalo Azumendi/Getty Images","longstartdate":"202407090700","imageinfolink":"https://www.bing.com/search?q=Talampaya+National+Park+Argentina&form=hpcapt","imageURL":"https://www.bing.com/th?id=OHR.TalampayaNP_ROW6737136981_UHD.jpg&qlt=100","filename":"/home/max/Pictures/BingWallpaper/20240709-TalampayaNP_ROW6737136981_UHD.jpg","favourite":false,"width":3840,"height":2160,"shuffledue":0}'
+
+[org/gnome/shell/extensions/blur-my-shell]
+settings-version=2
+
+[org/gnome/shell/extensions/blur-my-shell/appfolder]
+brightness=0.59999999999999998
+sigma=30
+
+[org/gnome/shell/extensions/blur-my-shell/dash-to-dock]
+blur=true
+brightness=0.59999999999999998
+sigma=30
+static-blur=true
+style-dash-to-dock=0
+
+[org/gnome/shell/extensions/blur-my-shell/panel]
+brightness=0.59999999999999998
+sigma=30
+
+[org/gnome/shell/extensions/blur-my-shell/window-list]
+brightness=0.59999999999999998
+sigma=30
 
 [org/gnome/shell/extensions/dash-to-panel]
 animate-appicon-hover=false
@@ -539,7 +589,9 @@ secondarymenu-contains-showdetails=true
 show-favorites=true
 status-icon-padding=-1
 taskbar-locked=false
+trans-bg-color='#1e1e1e'
 trans-panel-opacity=0.90000000000000002
+trans-use-custom-bg=true
 trans-use-custom-gradient=false
 trans-use-custom-opacity=true
 tray-padding=-1
@@ -566,7 +618,7 @@ speed=0.25
 [org/gnome/shell/extensions/quick-settings-tweaks]
 add-unsafe-quick-toggle-enabled=true
 last-unsafe-state=false
-list-buttons='[{"name":"SystemItem","title":null,"visible":true},{"name":"Notifications","title":null,"visible":true},{"name":"OutputStreamSlider","title":null,"visible":false},{"name":"InputStreamSlider","title":null,"visible":false},{"name":"St_BoxLayout","title":null,"visible":true},{"name":"BrightnessItem","title":null,"visible":false},{"name":"NMWiredToggle","title":null,"visible":false},{"name":"NMWirelessToggle","title":"Wi-Fi","visible":true},{"name":"NMModemToggle","title":null,"visible":false},{"name":"NMBluetoothToggle","title":null,"visible":false},{"name":"NMVpnToggle","title":null,"visible":false},{"name":"BluetoothToggle","title":"Bluetooth","visible":true},{"name":"PowerProfilesToggle","title":"Power Mode","visible":false},{"name":"NightLightToggle","title":"Night Light","visible":true},{"name":"DarkModeToggle","title":"Dark Style","visible":true},{"name":"KeyboardBrightnessToggle","title":"Keyboard","visible":false},{"name":"RfkillToggle","title":"Airplane Mode","visible":false},{"name":"RotationToggle","title":"Auto Rotate","visible":false},{"name":"DndQuickToggle","title":"Do Not Disturb","visible":true},{"name":"UnsafeQuickToggle","title":"Unsafe Mode","visible":true},{"name":"BackgroundAppsToggle","title":"No Background Apps","visible":false},{"name":"MediaSection","title":null,"visible":false}]'
+list-buttons='[{"name":"SystemItem","title":null,"visible":true},{"name":"Notifications","title":null,"visible":false},{"name":"OutputStreamSlider","title":null,"visible":false},{"name":"InputStreamSlider","title":null,"visible":false},{"name":"St_BoxLayout","title":null,"visible":true},{"name":"BrightnessItem","title":null,"visible":false},{"name":"NMWiredToggle","title":"Wired","visible":true},{"name":"NMWirelessToggle","title":null,"visible":false},{"name":"NMModemToggle","title":null,"visible":false},{"name":"NMBluetoothToggle","title":null,"visible":false},{"name":"NMVpnToggle","title":null,"visible":false},{"name":"BluetoothToggle","title":"Bluetooth","visible":false},{"name":"PowerProfilesToggle","title":"Power Mode","visible":false},{"name":"NightLightToggle","title":"Night Light","visible":true},{"name":"DarkModeToggle","title":"Dark Style","visible":true},{"name":"KeyboardBrightnessToggle","title":"Keyboard","visible":false},{"name":"RfkillToggle","title":"Airplane Mode","visible":false},{"name":"RotationToggle","title":"Auto Rotate","visible":false},{"name":"DndQuickToggle","title":"Do Not Disturb","visible":true},{"name":"UnsafeQuickToggle","title":"Unsafe Mode","visible":true},{"name":"BackgroundAppsToggle","title":"No Background Apps","visible":false},{"name":"MediaSection","title":null,"visible":false}]'
 media-control-compact-mode=true
 media-control-enabled=true
 notifications-position='top'
@@ -578,13 +630,18 @@ volume-mixer-position='top'
 volume-mixer-show-description=true
 volume-mixer-show-icon=true
 
+[org/gnome/shell/extensions/rounded-window-corners-reborn]
+custom-rounded-corner-settings=@a{sv} {}
+global-rounded-corner-settings={'padding': <{'left': <uint32 1>, 'right': <uint32 1>, 'top': <uint32 1>, 'bottom': <uint32 1>}>, 'keep_rounded_corners': <{'maximized': <false>, 'fullscreen': <false>}>, 'border_radius': <uint32 12>, 'smoothing': <uint32 0>}
+settings-version=uint32 5
+
 [org/gnome/shell/extensions/tiling-assistant]
 active-window-hint-color='rgb(82,113,173)'
 last-version-installed=47
 overridden-settings={'org.gnome.mutter.edge-tiling': <@mb nothing>, 'org.gnome.desktop.wm.keybindings.maximize': <@mb nothing>, 'org.gnome.desktop.wm.keybindings.unmaximize': <@mb nothing>, 'org.gnome.mutter.keybindings.toggle-tiled-left': <@mb nothing>, 'org.gnome.mutter.keybindings.toggle-tiled-right': <@mb nothing>}
 
 [org/gnome/shell/extensions/user-theme]
-name='WhiteSur-Dark-solid-nord'
+name=''
 
 [org/gnome/shell/keybindings]
 toggle-overview=['<Super>Tab']
@@ -597,12 +654,16 @@ locations=[<(uint32 2, <('Moscow', 'UUWW', true, [(0.97127572873484425, 0.650426
 locations=@av []
 
 [org/gnome/software]
-check-timestamp=int64 1718890695
+check-timestamp=int64 1720564855
 first-run=false
 flatpak-purge-timestamp=int64 1717289540
 
 [org/gnome/tweaks]
 show-extensions-notice=false
+
+[org/gtk/gtk4/settings/color-chooser]
+custom-colors=[(0.11764705926179886, 0.11764705926179886, 0.11764705926179886, 1.0)]
+selected-color=(true, 0.11764705926179886, 0.11764705926179886, 0.11764705926179886, 1.0)
 
 [org/gtk/gtk4/settings/file-chooser]
 date-format='regular'

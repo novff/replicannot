@@ -1147,6 +1147,13 @@ export class ViewAllAppsButton extends BaseMenuItem {
     }
 
     activate(event) {
+        const showAppsAction = this._settings.get_enum('all-apps-button-action');
+        if (showAppsAction === Constants.AllAppsButtonAction.ALL_PROGRAMS) {
+            this._menuLayout.displayAllApps();
+            super.activate(event);
+            return;
+        }
+
         const defaultMenuView = this._settings.get_enum('default-menu-view');
         if (defaultMenuView === Constants.DefaultMenuView.PINNED_APPS ||
             defaultMenuView === Constants.DefaultMenuView.FREQUENT_APPS)
